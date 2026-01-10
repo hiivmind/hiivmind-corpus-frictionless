@@ -121,9 +121,9 @@ data/
 Index entries use the format: `{source_id}:{relative_path}`
 
 Examples:
-- `frictionless-py:reference/api.md` - Git source
-- `local:team-standards/guidelines.md` - Local uploads
-- `web:blog-posts/article.md` - Cached web content
+- `frictionless-py:framework/resource.md` - Resource documentation
+- `frictionless-py:framework/schema.md` - Schema field types
+- `frictionless-py:guides/validating-data.md` - Data validation guide
 
 ---
 
@@ -131,26 +131,26 @@ Examples:
 
 ### Worked Example (IMPORTANT - Follow This Pattern!)
 
-**Index entry found:** `docs:guides/getting-started/index.md`
+**Index entry found:** `frictionless-py:framework/resource.md`
 
 **Step 1 - Parse the path:**
-- `source_id` = `docs` (everything before the colon)
-- `relative_path` = `guides/getting-started/index.md` (everything after the colon)
+- `source_id` = `frictionless-py` (everything before the colon)
+- `relative_path` = `framework/resource.md` (everything after the colon)
 
 **Step 2 - Look up source in config.yaml:**
 ```yaml
 sources:
-  - id: docs
+  - id: frictionless-py
     type: git
-    repo_owner: example
-    repo_name: docs
+    repo_owner: frictionlessdata
+    repo_name: frictionless-py
     branch: main
-    docs_root: content
+    docs_root: docs
 ```
 
 **Step 3 - Construct the full path:**
-- Local clone: `.source/docs/content/guides/getting-started/index.md`
-- GitHub URL: `https://raw.githubusercontent.com/example/docs/main/content/guides/getting-started/index.md`
+- Local clone: `.source/frictionless-py/docs/framework/resource.md`
+- GitHub URL: `https://raw.githubusercontent.com/frictionlessdata/frictionless-py/main/docs/framework/resource.md`
 
 **CRITICAL:** The `relative_path` from the index is used EXACTLY as-is. NEVER invent or guess filenames!
 
