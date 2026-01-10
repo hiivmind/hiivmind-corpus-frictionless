@@ -1,0 +1,40 @@
+# Frictionless Framework Corpus Configuration
+schema_version: 2
+
+corpus:
+  name: "frictionless"
+  display_name: "Frictionless Framework"
+  keywords:                    # Routing keywords for per-session discovery
+    - "frictionless"
+    - "data"
+    - "schema"
+    - "resource"
+    - "package"
+    - "validate"
+    - "transform"
+    - "extract"
+  created_at: "2026-01-06T11:00:00Z"
+
+# Multiple sources - each with its own type and tracking
+sources:
+  - id: "frictionless-py"
+    type: "git"
+    repo_url: "https://github.com/frictionlessdata/frictionless-py"
+    repo_owner: "frictionlessdata"
+    repo_name: "frictionless-py"
+    branch: "main"
+    docs_root: "docs"
+    last_commit_sha: "be08dcf491781a565d230f47e08707e703292d85"
+    last_indexed_at: "2026-01-06T11:00:00Z"
+
+index:
+  format: "markdown"
+  last_updated_at: "2026-01-06T11:00:00Z"
+
+settings:
+  include_patterns:
+    - "**/*.md"
+    - "**/*.mdx"
+  exclude_patterns:
+    - "**/_*.md"
+    - "**/_snippets/**"
