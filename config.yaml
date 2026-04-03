@@ -13,6 +13,8 @@ corpus:
     - "validate"
     - "transform"
     - "extract"
+    - "datapackage"
+    - "descriptor"
   created_at: "2026-01-06T11:00:00Z"
 
 # Multiple sources - each with its own type and tracking
@@ -25,11 +27,26 @@ sources:
     branch: "main"
     docs_root: "docs"
     last_commit_sha: "be08dcf491781a565d230f47e08707e703292d85"
-    last_indexed_at: "2026-01-06T11:00:00Z"
+    last_indexed_at: "2026-04-03T12:00:00Z"
+
+  - id: "datapackage"
+    type: "git"
+    repo_url: "https://github.com/frictionlessdata/datapackage"
+    repo_owner: "frictionlessdata"
+    repo_name: "datapackage"
+    branch: "main"
+    docs_root: "content/docs"
+    last_commit_sha: "fb989190714bec9d6e7d5dcce253526e16e93ab1"
+    last_indexed_at: "2026-04-03T12:00:00Z"
+    extraction:
+      wikilinks: false
+      frontmatter: true
+      tags: true
+      dataview: false
 
 index:
   format: "markdown"
-  last_updated_at: "2026-01-06T11:00:00Z"
+  last_updated_at: "2026-04-03T12:00:00Z"
 
 settings:
   include_patterns:
