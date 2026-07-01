@@ -720,8 +720,8 @@ entries:
     links_to: []
     links_from: []
     frontmatter: {}
-    stale: false
-    stale_since: null
+    stale: true
+    stale_since: "2026-07-01T00:00:00Z"
     last_indexed: "2026-04-03T12:00:00Z"
 
   - id: "frictionless-py:console/convert.md"
@@ -2707,8 +2707,8 @@ entries:
     links_to: []
     links_from: []
     frontmatter: {}
-    stale: false
-    stale_since: null
+    stale: true
+    stale_since: "2026-07-01T00:00:00Z"
     last_indexed: "2026-04-03T12:00:00Z"
 
   - id: "datapackage:blog/2023-11-15-v2-announcement.md"

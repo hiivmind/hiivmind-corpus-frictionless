@@ -26,8 +26,8 @@ sources:
     repo_name: "frictionless-py"
     branch: "main"
     docs_root: "docs"
-    last_commit_sha: "be08dcf491781a565d230f47e08707e703292d85"
-    last_indexed_at: "2026-04-03T12:00:00Z"
+    last_commit_sha: "7a043ff00b0a734373162084c57fcc32b957d04c"
+    last_indexed_at: "2026-07-01T00:00:00Z"
 
   - id: "datapackage"
     type: "git"
@@ -36,8 +36,8 @@ sources:
     repo_name: "datapackage"
     branch: "main"
     docs_root: "content/docs"
-    last_commit_sha: "fb989190714bec9d6e7d5dcce253526e16e93ab1"
-    last_indexed_at: "2026-04-03T12:00:00Z"
+    last_commit_sha: "6a201af8ed2eacbb3a2440e82e4c55d5807f9c09"
+    last_indexed_at: "2026-07-01T00:00:00Z"
     extraction:
       wikilinks: false
       frontmatter: true
@@ -46,7 +46,7 @@ sources:
 
 index:
   format: "markdown"
-  last_updated_at: "2026-04-03T12:00:00Z"
+  last_updated_at: "2026-07-01T00:00:00Z"
 
 settings:
   include_patterns:

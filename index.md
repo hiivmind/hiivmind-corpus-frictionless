@@ -5,7 +5,7 @@
 
 ---
 
-## Api
+## api
 
 - **Actions** `frictionless-py:framework/actions.md` - Reference documentation for Frictionless Framework actions including describing, extracting, validating, and transforming data operations.
 - **Catalog Class** `frictionless-py:framework/catalog.md` - API reference for the Catalog class which manages collections of data packages and resources in Frictionless.
@@ -21,7 +21,7 @@
 - **Schema Class** `frictionless-py:framework/schema.md` - API reference for the Schema class representing tabular data schemas with field definitions, constraints, and data type specifications.
 - **Table Class** `frictionless-py:framework/table.md` - Reference for the Table class providing low-level access to tabular data with iterator interface for reading rows and cells.
 
-## Guide
+## guide
 
 - **Caching of Resources** `datapackage:recipes/caching-of-resources.md` - Pattern for implementing resource caching allowing applications to maintain local copies of remote resources as fallback locations.
 - **Comparison with CSVW** `datapackage:guides/csvw-data-package.md` - Comparative analysis between Data Package and W3C CSVW standards examining scope, maintenance, adoption, extensibility, and property mapping.
@@ -48,17 +48,17 @@
 - **Translation Support** `datapackage:recipes/translation-support.md` - Pattern for supporting translations in both metadata descriptors and source data using inline field naming conventions and co-located translation sources.
 - **Validating Data** `frictionless-py:guides/validating-data.md` - Complete guide to data validation in Frictionless, showing how to identify and fix data problems using validation functions and checks.
 
-## Journal
+## journal
 
 - **Changelog** `datapackage:overview/changelog.md` - Detailed changelog documenting all meaningful changes made to the Data Package standard from v2.0 to v1.0, including specification improvements and feature updates.
 - **Data Package (v2) is released!** `datapackage:blog/2024-06-26-v2-release.md` - Release announcement for Data Package v2.0 describing new features, governance model, working group contributions, and next steps for adoption.
 - **Data Package (v2) work started** `datapackage:blog/2023-11-15-v2-announcement.md` - Announcement of the kickoff of Data Package v2 development with NLnet support, introducing the working group and roadmap for the update.
 
-## Navigation
+## navigation
 
 - **Data Package** `datapackage:index.mdx` - Landing page introducing the Data Package standard as a comprehensive specification for describing datasets and tabular data with emphasis on FAIR data principles.
 
-## Reference
+## reference
 
 - **AWS Scheme** `frictionless-py:schemes/aws.md` - Reference for accessing data from Amazon S3 storage in Frictionless.
 - **Adoption** `datapackage:overview/adoption.mdx` - Showcase of Data Package adoption across diverse organizations including data portals, pilot projects, and community implementations demonstrating real-world use cases.
@@ -146,7 +146,7 @@
 - **ZIP Format** `frictionless-py:formats/zip.md` - Reference for reading data from ZIP archive files in Frictionless.
 - **Zenodo Portal** `frictionless-py:portals/zenodo.md` - Reference for publishing data packages to Zenodo repository.
 
-## Tutorial
+## tutorial
 
 - **Basic Examples** `frictionless-py:basic-examples.md` - Hands-on walkthrough of core Frictionless operations using a real-world anthropology dataset, demonstrating describing, extracting, validating, and transforming data.
 - **Getting Started** `frictionless-py:getting-started.md` - Introduction to Frictionless Framework with installation instructions, basic usage patterns for both CLI and Python library, and troubleshooting guidance.
