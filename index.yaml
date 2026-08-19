@@ -243,7 +243,7 @@ entries:
     summary: "Formal specification of the Data Package standard defining the container format, descriptor structure, and metadata requirements for describing coherent collections of data."
     tags: [standard, specification, reference, data-package]
     keywords: [data-package, descriptor, metadata, datapackage.json, resources, specification]
-    concepts: []
+    concepts: [data-package-standard, datapackage-v2]
     category: reference
     content_type: markdown
     size: large
@@ -263,7 +263,7 @@ entries:
     summary: "Specification for describing individual data resources including files or datasets, covering locators, metadata properties, and format information."
     tags: [standard, specification, reference, resource]
     keywords: [data-resource, resource, path, data, name, format, metadata]
-    concepts: []
+    concepts: [data-resource-standard, datapackage-v2]
     category: reference
     content_type: markdown
     size: large
@@ -283,7 +283,7 @@ entries:
     summary: "Specification describing how tabular data is stored in files, supporting delimited text formats like CSV, semi-structured formats like JSON, and spreadsheets."
     tags: [standard, specification, reference, tabular-data]
     keywords: [table-dialect, csv, delimiter, header, dialect, tabular-data, format]
-    concepts: []
+    concepts: [table-dialect, datapackage-v2]
     category: reference
     content_type: markdown
     size: large
@@ -303,7 +303,7 @@ entries:
     summary: "Language-agnostic specification for declaring schemas describing tabular data structure, field types, constraints, and validation rules."
     tags: [standard, specification, reference, schema]
     keywords: [table-schema, schema, fields, field-types, constraints, validation, metadata]
-    concepts: []
+    concepts: [table-schema, datapackage-v2]
     category: reference
     content_type: markdown
     size: large
@@ -323,7 +323,7 @@ entries:
     summary: "Documentation of the Data Package extensibility mechanism allowing domain-specific extensions through JSON Schema profiles for specialized metadata requirements."
     tags: [standard, specification, reference, extensions]
     keywords: [extensions, profile, json-schema, domain-specific, customization]
-    concepts: []
+    concepts: [extensions, datapackage-v2]
     category: reference
     content_type: markdown
     size: standard
@@ -343,7 +343,7 @@ entries:
     summary: "Comprehensive glossary defining key terms and concepts used throughout the Data Package standard including profile, descriptor, and custom properties."
     tags: [standard, reference, glossary, terminology]
     keywords: [glossary, profile, descriptor, custom-properties, terminology, definitions]
-    concepts: []
+    concepts: [datapackage-v2]
     category: reference
     content_type: markdown
     size: standard
@@ -363,7 +363,7 @@ entries:
     summary: "Security considerations for working with Data Packages covering resource pointer types, descriptor sources, and attack prevention strategies."
     tags: [standard, reference, security]
     keywords: [security, safety, attacks, resource-pointers, file-paths, urls]
-    concepts: []
+    concepts: [datapackage-v2]
     category: reference
     content_type: markdown
     size: standard
@@ -455,8 +455,8 @@ entries:
     links_to: []
     links_from: []
     frontmatter: {}
-    stale: false
-    stale_since: null
+    stale: true
+    stale_since: "2026-08-19T10:43:27Z"
     last_indexed: "2026-04-03T12:00:00Z"
 
   - id: "frictionless-py:framework/dialect.md"
@@ -2142,7 +2142,7 @@ entries:
     summary: "Reference to Fiscal Data Package, a lightweight domain-specific extension for publishing and consuming government budget and fiscal data."
     tags: [extension, domain-specific, fiscal, government]
     keywords: [fiscal-data, extension, government, budget, spreadsheet]
-    concepts: []
+    concepts: [extensions]
     category: reference
     content_type: markdown
     size: standard
@@ -2162,7 +2162,7 @@ entries:
     summary: "Reference to Camera Trap Data Package, a community-developed data exchange format extension for camera trap data built on Data Package."
     tags: [extension, domain-specific, biodiversity]
     keywords: [camera-trap, extension, biodiversity, wildlife]
-    concepts: []
+    concepts: [extensions]
     category: reference
     content_type: markdown
     size: standard
@@ -2182,7 +2182,7 @@ entries:
     summary: "Comprehensive overview of software tools and libraries supporting the Data Package standard across multiple programming languages and platforms."
     tags: [software, tools, libraries, implementations]
     keywords: [software, libraries, python, javascript, typescript, r, ruby, php, java, swift, go, julia]
-    concepts: []
+    concepts: [ecosystem-and-governance]
     category: reference
     content_type: markdown
     size: standard
@@ -2212,7 +2212,7 @@ entries:
     summary: "Showcase of Data Package adoption across diverse organizations including data portals, pilot projects, and community implementations demonstrating real-world use cases."
     tags: [adoption, use-cases, implementations]
     keywords: [adoption, data-portals, organizations, projects, integration]
-    concepts: []
+    concepts: [ecosystem-and-governance]
     category: reference
     content_type: markdown
     size: standard
@@ -2694,7 +2694,7 @@ entries:
     summary: "Detailed changelog documenting all meaningful changes made to the Data Package standard from v2.0 to v1.0, including specification improvements and feature updates."
     tags: [changelog, release-notes, version-history]
     keywords: [v2.0, v1.0, changes, updates, improvements, specifications]
-    concepts: []
+    concepts: [datapackage-v2]
     category: journal
     content_type: markdown
     size: standard
@@ -2742,7 +2742,7 @@ entries:
     summary: "Release announcement for Data Package v2.0 describing new features, governance model, working group contributions, and next steps for adoption."
     tags: [news, announcement, v2-release, major-milestone]
     keywords: [v2, release, features, governance, working-group, adoption]
-    concepts: []
+    concepts: [datapackage-v2]
     category: journal
     content_type: markdown
     size: standard
@@ -2759,6 +2759,5663 @@ entries:
     stale_since: null
     last_indexed: "2026-04-03T12:00:00Z"
 
+  - id: datapackage:blog/2023-11-15-v2-announcement.md#decision-making
+    parent: datapackage:blog/2023-11-15-v2-announcement.md
+    tier: section
+    source: datapackage
+    path: blog/2023-11-15-v2-announcement.md
+    anchor: decision-making
+    title: Decision-making
+    summary: For every GitHub issue on the specs submitted by the community throughout
+      the years, the Frictionless core team or any working group member will propose a
+      recommended action to the working group. The action proposed will be **accepted
+      if co…
+    tags:
+    - journal
+    - blog
+    - decision-making
+    keywords:
+    - Decision-making
+    - every
+    - GitHub
+    - issue
+    - specs
+    - submitted
+    - community
+    - throughout
+    - years
+    - Frictionless
+    concepts: []
+    category: journal
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 45
+    - 56
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:blog/2023-11-15-v2-announcement.md#diversity
+    parent: datapackage:blog/2023-11-15-v2-announcement.md
+    tier: section
+    source: datapackage
+    path: blog/2023-11-15-v2-announcement.md
+    anchor: diversity
+    title: Diversity
+    summary: Leveraging diversity is an opportunity that we must embrace for the benefits
+      it brings. Extensive research consistently demonstrates that diverse participation
+      leads to better outcomes and more resilient technologies — diverse communities a…
+    tags:
+    - journal
+    - blog
+    - diversity
+    keywords:
+    - Diversity
+    - Leveraging
+    - diversity
+    - opportunity
+    - must
+    - embrace
+    - benefits
+    - brings.
+    - Extensive
+    - research
+    concepts: []
+    category: journal
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 57
+    - 70
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:blog/2024-06-26-v2-release.md#so-what-is-new-in-version-2
+    parent: datapackage:blog/2024-06-26-v2-release.md
+    tier: section
+    source: datapackage
+    path: blog/2024-06-26-v2-release.md
+    anchor: so-what-is-new-in-version-2
+    title: So what is new in version 2?
+    summary: 'During these months we have been working on the core specifications that
+      compose the Standard, namely: Data Package – a simple container format for describing
+      a coherent collection of data in a single ‘package’, Data Resource to describe an…'
+    tags:
+    - journal
+    - blog
+    - v2
+    - what
+    - new
+    keywords:
+    - what
+    - new
+    - version
+    - During
+    - these
+    - months
+    - been
+    - working
+    - core
+    - specifications
+    concepts: [datapackage-v2]
+    category: journal
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 27
+    - 40
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#property-comparison
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: property-comparison
+    title: Property Comparison
+    summary: Below is a list of all properties defined in CSVW’s Metadata Vocabulary for
+      Tabular Data (version 20151217) and how these are supported in Data Package (v2.0).
+    tags:
+    - guide
+    - guides
+    - property
+    - comparison
+    keywords:
+    - Property
+    - Comparison
+    - Below
+    - list
+    - all
+    - properties
+    - defined
+    - CSVW
+    - Metadata
+    - Vocabulary
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 48
+    - 199
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#property-syntax
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: property-syntax
+    title: Property Syntax
+    summary: "| CSVW property | Data Package support | Details | | ---- | ---- | ----
+      | | Array properties | Yes | | | Link properties | Partial | URLs and paths are
+      supported, but not with a @base URL in @context | | URI template properties | No
+      | | | C…"
+    tags:
+    - guide
+    - guides
+    - property
+    - syntax
+    keywords:
+    - Property
+    - Syntax
+    - CSVW
+    - property
+    - Data
+    - Package
+    - support
+    - Details
+    - Array
+    - properties
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 52
+    - 63
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#table-groups
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: table-groups
+    title: Table Groups
+    summary: ":::note Data Package can define more than groups of tables. A package can
+      be a set of resources of any type. Data Resource therefore supports features that
+      CSVW does not, such as format, mediatype, and hash. :::"
+    tags:
+    - guide
+    - guides
+    - table
+    - groups
+    keywords:
+    - Table
+    - Groups
+    - note
+    - Data
+    - Package
+    - can
+    - define
+    - more
+    - than
+    - groups
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 70
+    - 86
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#tables
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: tables
+    title: Tables
+    summary: "| CSVW property | Data Package support | Details | | ---- | ---- | ----
+      | | url | Yes | As resource.path | | dialect | Yes | As resource.dialect | | notes
+      | Custom property | | | suppressOutput | No | | | tableDirection | No | | | tableSche…"
+    tags:
+    - guide
+    - guides
+    - tables
+    keywords:
+    - Tables
+    - CSVW
+    - property
+    - Data
+    - Package
+    - support
+    - Details
+    - url
+    - http
+    - table-url
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 87
+    - 100
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#schemas
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: schemas
+    title: Schemas
+    summary: ":::note Data Package Table Schema has features that CSVW schema does not,
+      including fieldMatch for matching a schema with data, missingValues for multiple
+      (and labelled) missing values, and uniqueKeys. :::"
+    tags:
+    - guide
+    - guides
+    - schemas
+    keywords:
+    - Schemas
+    - note
+    - Data
+    - Package
+    - Table
+    - Schema
+    - standard
+    - table-schema
+    - features
+    - CSVW
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 101
+    - 115
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#columns
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: columns
+    title: Columns
+    summary: "| CSVW property | Data Package support | Details | | ---- | ---- | ----
+      | | name | Yes | As field.name | | suppressOutput | No | | | titles | Partial |
+      As field.title (a single value) | | virtual | No | | | @id | Custom property | |
+      | @type…"
+    tags:
+    - guide
+    - guides
+    - columns
+    keywords:
+    - Columns
+    - CSVW
+    - property
+    - Data
+    - Package
+    - support
+    - Details
+    - name
+    - https
+    - www.w3.org
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 116
+    - 126
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#inherited-properties
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: inherited-properties
+    title: Inherited Properties
+    summary: Data Package properties do not inherit from their parent, unless otherwise
+      specified (e.g. resource.sources). The properties listed below only exist at one
+      level in Data Package, except for missingValues.
+    tags:
+    - guide
+    - guides
+    - inherited
+    - properties
+    keywords:
+    - Inherited
+    - Properties
+    - Data
+    - Package
+    - properties
+    - not
+    - inherit
+    - their
+    - parent
+    - unless
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 127
+    - 144
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#dialect-descriptions
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: dialect-descriptions
+    title: Dialect Descriptions
+    summary: ":::note Data Package Table Dialect was used as inspiration for CSVW dialect.
+      It has features that CSVW dialect does not, since it covers tabular data formats
+      beyond delimited text files, such as spreadsheets and databases. For delimited tex…"
+    tags:
+    - guide
+    - guides
+    - dialect
+    - descriptions
+    keywords:
+    - Dialect
+    - Descriptions
+    - note
+    - Data
+    - Package
+    - Table
+    - standard
+    - table-dialect
+    - used
+    - inspiration
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 149
+    - 172
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/csvw-data-package.md#data-types
+    parent: datapackage:guides/csvw-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/csvw-data-package.md
+    anchor: data-types
+    title: Data Types
+    summary: CSVW defines data types as built-in data types and derived data types. A
+      derived data type extends a built-in data type with formats, constraints, etc. Data
+      Package does not make that distinction, but rather defines a number of Field Types.…
+    tags:
+    - guide
+    - guides
+    - data
+    - types
+    keywords:
+    - Data
+    - Types
+    - CSVW
+    - defines
+    - data
+    - types
+    - built-in
+    - derived
+    - types.
+    - type
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 177
+    - 199
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/mediawiki-tabular-data.md#property-comparison
+    parent: datapackage:guides/mediawiki-tabular-data.md
+    tier: section
+    source: datapackage
+    path: guides/mediawiki-tabular-data.md
+    anchor: property-comparison
+    title: Property Comparison
+    summary: A MediaWiki tabular data page describes and contains an individual table
+      of data similar to a Data Resource with inline tabular data. Both are serialized
+      as JSON objects, but the former comes as a page with unique name in a MediaWiki
+      instan…
+    tags:
+    - guide
+    - guides
+    - property
+    - comparison
+    keywords:
+    - Property
+    - Comparison
+    - MediaWiki
+    - tabular
+    - data
+    - page
+    - https
+    - www.mediawiki.org
+    - wiki
+    - Help
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 16
+    - 61
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/mediawiki-tabular-data.md#top-level-properties
+    parent: datapackage:guides/mediawiki-tabular-data.md
+    tier: section
+    source: datapackage
+    path: guides/mediawiki-tabular-data.md
+    anchor: top-level-properties
+    title: Top-level Properties
+    summary: 'MediaWiki Tabular Data has three required and two optional top-level properties.
+      Most of these properties map to corresponding properties of a Data Resource:'
+    tags:
+    - guide
+    - guides
+    - top-level
+    - properties
+    keywords:
+    - Top-level
+    - Properties
+    - MediaWiki
+    - Tabular
+    - Data
+    - three
+    - required
+    - two
+    - optional
+    - top-level
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 20
+    - 40
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/mediawiki-tabular-data.md#data-types
+    parent: datapackage:guides/mediawiki-tabular-data.md
+    tier: section
+    source: datapackage
+    path: guides/mediawiki-tabular-data.md
+    anchor: data-types
+    title: Data Types
+    summary: 'Tabular Data supports four data types that overlap with Table Schema data
+      types:'
+    tags:
+    - guide
+    - guides
+    - data
+    - types
+    keywords:
+    - Data
+    - Types
+    - Tabular
+    - supports
+    - four
+    - data
+    - types
+    - overlap
+    - Table
+    - Schema
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 41
+    - 52
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/mediawiki-tabular-data.md#schema-properties
+    parent: datapackage:guides/mediawiki-tabular-data.md
+    tier: section
+    source: datapackage
+    path: guides/mediawiki-tabular-data.md
+    anchor: schema-properties
+    title: Schema Properties
+    summary: The schema property of MediaWiki tabular contains an object with property
+      fields just like Table Schema but no other properties are allowed. Elements of this
+      array are like Table Schema field descriptors limited to three properties and diff…
+    tags:
+    - guide
+    - guides
+    - schema
+    - properties
+    keywords:
+    - Schema
+    - Properties
+    - schema
+    - property
+    - MediaWiki
+    - tabular
+    - contains
+    - object
+    - fields
+    - just
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 53
+    - 61
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/using-data-package.md#frictionless-py
+    parent: datapackage:guides/using-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/using-data-package.md
+    anchor: frictionless-py
+    title: frictionless-py
+    summary: 'If you prefer a command-line interface, or Python, there is frictionless-py,
+      a complete framework for managing data packages. Here are main commands available
+      in CLI:'
+    tags:
+    - tutorial
+    - guides
+    - frictionless-py
+    keywords:
+    - frictionless-py
+    - you
+    - prefer
+    - command-line
+    - interface
+    - Python
+    - there
+    - https
+    - framework.frictionlessdata.io
+    - complete
+    concepts: []
+    category: tutorial
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 23
+    - 42
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:guides/using-data-package.md#frictionless-r
+    parent: datapackage:guides/using-data-package.md
+    tier: section
+    source: datapackage
+    path: guides/using-data-package.md
+    anchor: frictionless-r
+    title: frictionless-r
+    summary: 'For the R community, there is frictionless-r package that allows managing
+      data packages in R language. For example:'
+    tags:
+    - tutorial
+    - guides
+    - frictionless-r
+    keywords:
+    - frictionless-r
+    - community
+    - there
+    - https
+    - docs.ropensci.org
+    - frictionless
+    - package
+    - allows
+    - managing
+    - data
+    concepts: []
+    category: tutorial
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 43
+    - 66
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/adoption.mdx#data-portals
+    parent: datapackage:overview/adoption.mdx
+    tier: section
+    source: datapackage
+    path: overview/adoption.mdx
+    anchor: data-portals
+    title: Data Portals
+    summary: 'Data portals adopting Data Package standard to increase accessibility of
+      published data:'
+    tags:
+    - reference
+    - data
+    - portals
+    keywords:
+    - Data
+    - Portals
+    - portals
+    - adopting
+    - Package
+    - standard
+    - increase
+    - accessibility
+    - published
+    - data
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 17
+    - 35
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/adoption.mdx#pilot-projects
+    parent: datapackage:overview/adoption.mdx
+    tier: section
+    source: datapackage
+    path: overview/adoption.mdx
+    anchor: pilot-projects
+    title: Pilot Projects
+    summary: We work closely with data researchers and institutions to help them integrate
+      Frictionless into their workflow. Click on individual Pilots to learn more.
+    tags:
+    - reference
+    - pilot
+    - projects
+    keywords:
+    - Pilot
+    - Projects
+    - work
+    - closely
+    - data
+    - researchers
+    - institutions
+    - help
+    - them
+    - integrate
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 36
+    - 111
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/adoption.mdx#community-projects
+    parent: datapackage:overview/adoption.mdx
+    tier: section
+    source: datapackage
+    path: overview/adoption.mdx
+    anchor: community-projects
+    title: Community Projects
+    summary: Here is a list of projects that our community has created on top of Data
+      Package. If you would like your project to be featured here, let us know!
+    tags:
+    - reference
+    - community
+    - projects
+    keywords:
+    - Community
+    - Projects
+    - Here
+    - list
+    - projects
+    - our
+    - community
+    - created
+    - top
+    - Data
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 112
+    - 262
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/changelog.md#v2-0
+    parent: datapackage:overview/changelog.md
+    tier: section
+    source: datapackage
+    path: overview/changelog.md
+    anchor: v2-0
+    title: v2.0
+    summary: This release includes a rich set of specification improvements to make Data
+      Package a finished product (see announcement). All changes were reviewed and accepted
+      by the Data Package Working Group.
+    tags:
+    - journal
+    - v2
+    - v2.0
+    keywords:
+    - v2.0
+    - release
+    - includes
+    - rich
+    - set
+    - specification
+    - improvements
+    - make
+    - Data
+    - Package
+    concepts: [datapackage-v2]
+    category: journal
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 9
+    - 149
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/changelog.md#package-contributors-updated
+    parent: datapackage:overview/changelog.md
+    tier: section
+    source: datapackage
+    path: overview/changelog.md
+    anchor: package-contributors-updated
+    title: package.contributors (updated)
+    summary: 'contributors was updated:'
+    tags:
+    - journal
+    - package.contributors
+    - updated
+    keywords:
+    - package.contributors
+    - updated
+    - contributors
+    - standard
+    - data-package
+    - contributor.title
+    - longer
+    - required
+    - https
+    - github.com
+    concepts: [datapackage-v2]
+    category: journal
+    content_type: markdown
+    heading_level: 5
+    line_range:
+    - 23
+    - 31
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/introduction.md#the-project
+    parent: datapackage:overview/introduction.md
+    tier: section
+    source: datapackage
+    path: overview/introduction.md
+    anchor: the-project
+    title: The Project
+    summary: The Data Package Standard emerges as a solution to these challenges, offering
+      a structured and versatile framework for organizing, documenting, and distributing
+      data. Whether you are a data scientist, researcher, data engineer, or data stew…
+    tags:
+    - guide
+    - project
+    keywords:
+    - Project
+    - Data
+    - Package
+    - Standard
+    - emerges
+    - solution
+    - these
+    - challenges
+    - offering
+    - structured
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 13
+    - 24
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/introduction.md#key-principles
+    parent: datapackage:overview/introduction.md
+    tier: section
+    source: datapackage
+    path: overview/introduction.md
+    anchor: key-principles
+    title: Key Principles
+    summary: 'At its core, the Data Package Standard is built upon a set of key principles
+      that underpin its design and functionality:'
+    tags:
+    - guide
+    - key
+    - principles
+    keywords:
+    - Key
+    - Principles
+    - its
+    - core
+    - Data
+    - Package
+    - Standard
+    - built
+    - upon
+    - set
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 25
+    - 36
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/introduction.md#benefits-of-adoption
+    parent: datapackage:overview/introduction.md
+    tier: section
+    source: datapackage
+    path: overview/introduction.md
+    anchor: benefits-of-adoption
+    title: Benefits of Adoption
+    summary: 'By adhering to the Data Package Standard, you can unlock several significant
+      advantages in your data management processes:'
+    tags:
+    - guide
+    - benefits
+    - adoption
+    keywords:
+    - Benefits
+    - Adoption
+    - adhering
+    - Data
+    - Package
+    - Standard
+    - you
+    - can
+    - unlock
+    - several
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 37
+    - 49
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#visual
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: visual
+    title: Visual
+    summary: 'No-code application to explore and publish all kinds of data: datasets,
+      tables, charts, maps, stories, and more. Forever free and open source project powered
+      by open standards and generative AI." href="https://opendataeditor.okfn.org" />'
+    tags:
+    - reference
+    - visual
+    keywords:
+    - Visual
+    - ImageLinkCard
+    - title
+    - Open
+    - Data
+    - Editor
+    - imageSrc
+    - software.ode.src
+    - description
+    - No-code
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 17
+    - 41
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#python
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: python
+    title: Python
+    summary: Python section in Software.
+    tags:
+    - reference
+    - python
+    keywords:
+    - Python
+    - CardGrid
+    - LinkCard
+    - title
+    - frictionless-py
+    - description
+    - Data
+    - management
+    - framework
+    - provides
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 42
+    - 56
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#typescript
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: typescript
+    title: TypeScript
+    summary: TypeScript section in Software.
+    tags:
+    - reference
+    - typescript
+    keywords:
+    - TypeScript
+    - CardGrid
+    - LinkCard
+    - title
+    - frictionless-ts
+    - description
+    - Fast
+    - data
+    - management
+    - framework
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 57
+    - 66
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#javascript
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: javascript
+    title: JavaScript
+    summary: JavaScript section in Software.
+    tags:
+    - reference
+    - javascript
+    keywords:
+    - JavaScript
+    - CardGrid
+    - LinkCard
+    - title
+    - frictionless-js
+    - description
+    - lightweight
+    - standardized
+    - library
+    - accessing
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 67
+    - 81
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#r
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: r
+    title: R
+    summary: R section in Software.
+    tags:
+    - reference
+    keywords:
+    - CardGrid
+    - LinkCard
+    - title
+    - frictionless-r
+    - description
+    - package
+    - read
+    - write
+    - Frictionless
+    - Data
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 82
+    - 91
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#ruby
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: ruby
+    title: Ruby
+    summary: Ruby section in Software.
+    tags:
+    - reference
+    - ruby
+    keywords:
+    - Ruby
+    - CardGrid
+    - LinkCard
+    - title
+    - datapackage-rb
+    - description
+    - library
+    - tools
+    - working
+    - datapackages
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 92
+    - 106
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#php
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: php
+    title: PHP
+    summary: PHP section in Software.
+    tags:
+    - reference
+    - php
+    keywords:
+    - PHP
+    - CardGrid
+    - LinkCard
+    - title
+    - datapackage-php
+    - description
+    - php
+    - library
+    - working
+    - Data
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 107
+    - 121
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#java
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: java
+    title: Java
+    summary: Java section in Software.
+    tags:
+    - reference
+    - java
+    keywords:
+    - Java
+    - CardGrid
+    - LinkCard
+    - title
+    - datapackage-java
+    - description
+    - library
+    - working
+    - Frictionless
+    - Data
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 122
+    - 136
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#swift
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: swift
+    title: Swift
+    summary: Swift section in Software.
+    tags:
+    - reference
+    - swift
+    keywords:
+    - Swift
+    - CardGrid
+    - LinkCard
+    - title
+    - datapackage-swift
+    - description
+    - library
+    - working
+    - Data
+    - Package.
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 137
+    - 151
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#go
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: go
+    title: Go
+    summary: Go section in Software.
+    tags:
+    - reference
+    keywords:
+    - CardGrid
+    - LinkCard
+    - title
+    - datapackage-go
+    - description
+    - library
+    - working
+    - Data
+    - Package.
+    - href
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 152
+    - 166
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:overview/software.mdx#julia
+    parent: datapackage:overview/software.mdx
+    tier: section
+    source: datapackage
+    path: overview/software.mdx
+    anchor: julia
+    title: Julia
+    summary: Julia section in Software.
+    tags:
+    - reference
+    - julia
+    keywords:
+    - Julia
+    - CardGrid
+    - LinkCard
+    - title
+    - datapackage-jl
+    - description
+    - library
+    - working
+    - Data
+    - Package.
+    concepts: [ecosystem-and-governance]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 167
+    - 180
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/caching-of-resources.md#specification
+    parent: datapackage:recipes/caching-of-resources.md
+    tier: section
+    source: datapackage
+    path: recipes/caching-of-resources.md
+    anchor: specification
+    title: Specification
+    summary: Implementations MAY handle a _cache property on any descriptor that supports
+      either a path or data property. In the case that the data referenced in path or
+      data is unavailable, _cache should be used as a fallback to access the data. The
+      ha…
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - Implementations
+    - MAY
+    - handle
+    - cache
+    - property
+    - any
+    - descriptor
+    - supports
+    - either
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 22
+    - 60
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/compression-of-resources.md#specification
+    parent: datapackage:recipes/compression-of-resources.md
+    tier: section
+    source: datapackage
+    path: recipes/compression-of-resources.md
+    anchor: specification
+    title: Specification
+    summary: All compressed resources MUST have a path that allows the compression property
+      to be inferred. If the compression can't be inferred from the path property (e.g.
+      a custom file extension is used) then the compression property MUST be used to…
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - All
+    - compressed
+    - resources
+    - MUST
+    - path
+    - allows
+    - compression
+    - property
+    - inferred.
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 20
+    - 62
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/data-catalog.md#specification
+    parent: datapackage:recipes/data-catalog.md
+    tier: section
+    source: datapackage
+    path: recipes/data-catalog.md
+    anchor: specification
+    title: Specification
+    summary: The Data Package Catalog builds directly on the Data Package specification.
+      Thus a Data Package Catalog MUST be a Data Package and conform to the [Data Package
+      specification][dp].
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - Data
+    - Package
+    - Catalog
+    - builds
+    - directly
+    - specification.
+    - Thus
+    - MUST
+    - conform
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 23
+    - 127
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/data-catalog.md#examples
+    parent: datapackage:recipes/data-catalog.md
+    tier: section
+    source: datapackage
+    path: recipes/data-catalog.md
+    anchor: examples
+    title: Examples
+    summary: 'A generic package catalog:'
+    tags:
+    - guide
+    - recipes
+    - examples
+    keywords:
+    - Examples
+    - generic
+    - package
+    - catalog
+    - json
+    - profile
+    - data-package-catalog
+    - name
+    - climate-change-packages
+    - resources
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 32
+    - 127
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/data-dependencies.md#specification
+    parent: datapackage:recipes/data-dependencies.md
+    tier: section
+    source: datapackage
+    path: recipes/data-dependencies.md
+    anchor: specification
+    title: Specification
+    summary: dataDependencies is an object. It follows same format as CommonJS Packages
+      spec v1.1. Each dependency defines the lowest compatible MAJOR[.MINOR[.PATCH]] dependency
+      versions (only one per MAJOR version) with which the package has been teste…
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - dataDependencies
+    - object.
+    - follows
+    - same
+    - format
+    - CommonJS
+    - Packages
+    - spec
+    - v1.1.
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 16
+    - 30
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/data-package-version.md#specification
+    parent: datapackage:recipes/data-package-version.md
+    tier: section
+    source: datapackage
+    path: recipes/data-package-version.md
+    anchor: specification
+    title: Specification
+    summary: 'The Data Package version format follows the Semantic Versioning specification
+      format: MAJOR.MINOR.PATCH'
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - Data
+    - Package
+    - version
+    - format
+    - follows
+    - Semantic
+    - Versioning
+    - http
+    - semver.org
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 12
+    - 40
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/data-package-version.md#scenarios
+    parent: datapackage:recipes/data-package-version.md
+    tier: section
+    source: datapackage
+    path: recipes/data-package-version.md
+    anchor: scenarios
+    title: Scenarios
+    summary: "- You are developing your data though public consultation. Start your initial
+      data release at 0.1.0 - You release your data for the first time. Use version 1.0.0
+      - You append last months data to an existing release. Increment the MINOR vers…"
+    tags:
+    - guide
+    - recipes
+    - scenarios
+    keywords:
+    - Scenarios
+    - You
+    - developing
+    - your
+    - data
+    - though
+    - public
+    - consultation.
+    - Start
+    - initial
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 41
+    - 51
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/external-foreign-keys.md#specification
+    parent: datapackage:recipes/external-foreign-keys.md
+    tier: section
+    source: datapackage
+    path: recipes/external-foreign-keys.md
+    anchor: specification
+    title: Specification
+    summary: 'The foreignKeys array MAY have a property package. This property MUST be,
+      either:'
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - foreignKeys
+    - standard
+    - table-schema
+    - foreignkeys
+    - array
+    - MAY
+    - property
+    - package
+    - MUST
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 16
+    - 36
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/files-inside-archives.md#example
+    parent: datapackage:recipes/files-inside-archives.md
+    tier: section
+    source: datapackage
+    path: recipes/files-inside-archives.md
+    anchor: example
+    title: Example
+    summary: '{ "profile": "data-package", "resources": [ { "path": "https://zenodo.org/record/3247384/files/Sea-Bird_Processed_Data.zip",
+      "format": "zip", "mediatype": "application/zip", "bytes": "294294242424", "hash":
+      "a27063c614c183b502e5c03bd9c8931b…'
+    tags:
+    - guide
+    - recipes
+    - example
+    keywords:
+    - Example
+    - json
+    - profile
+    - data-package
+    - resources
+    - path
+    - https
+    - zenodo.org
+    - record
+    - files
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 24
+    - 63
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/json-data-resources.md#examples
+    parent: datapackage:recipes/json-data-resources.md
+    tier: section
+    source: datapackage
+    path: recipes/json-data-resources.md
+    anchor: examples
+    title: Examples
+    summary: A minimal JSON Data Resource, referencing external JSON documents, looks
+      as follows.
+    tags:
+    - guide
+    - recipes
+    - examples
+    keywords:
+    - Examples
+    - minimal
+    - JSON
+    - Data
+    - Resource
+    - referencing
+    - external
+    - documents
+    - looks
+    - follows.
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 22
+    - 115
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/json-data-resources.md#specification
+    parent: datapackage:recipes/json-data-resources.md
+    tier: section
+    source: datapackage
+    path: recipes/json-data-resources.md
+    anchor: specification
+    title: Specification
+    summary: A JSON Data Resource MUST be a [Data Resource][dr], that is it MUST conform
+      to the [Data Resource specification][dr].
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - JSON
+    - Data
+    - Resource
+    - MUST
+    - conform
+    - specification
+    - addition
+    - schema
+    - property
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 116
+    - 125
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/language-support.md#specification
+    parent: datapackage:recipes/language-support.md
+    tier: section
+    source: datapackage
+    path: recipes/language-support.md
+    anchor: specification
+    title: Specification
+    summary: Any Frictionless Data descriptor can declare the language configuration of
+      its metadata and data with the languages array.
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - Any
+    - Frictionless
+    - Data
+    - descriptor
+    - can
+    - declare
+    - language
+    - configuration
+    - its
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 18
+    - 76
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/metadata-in-table-schema.md#specification
+    parent: datapackage:recipes/metadata-in-table-schema.md
+    tier: section
+    source: datapackage
+    path: recipes/metadata-in-table-schema.md
+    anchor: specification
+    title: Specification
+    summary: 'This pattern introduces the following properties to the Table Schema spec
+      (using the Frictionless Data core dictionary as much as possible):'
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - pattern
+    - introduces
+    - following
+    - properties
+    - Table
+    - Schema
+    - spec
+    - using
+    - Frictionless
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 26
+    - 51
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/metadata-in-table-schema.md#example-schema
+    parent: datapackage:recipes/metadata-in-table-schema.md
+    tier: section
+    source: datapackage
+    path: recipes/metadata-in-table-schema.md
+    anchor: example-schema
+    title: Example schema
+    summary: '{ "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+      "name": "irve", "title": "Infrastructures de recharge de véhicules électriques",
+      "description": "Spécification du fichier d''échange relatif aux données concernant
+      l…'
+    tags:
+    - guide
+    - recipes
+    - example
+    - schema
+    keywords:
+    - Example
+    - schema
+    - "$schema"
+    - https
+    - specs.frictionlessdata.io
+    - schemas
+    - table-schema.json
+    - name
+    - irve
+    - title
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 52
+    - 115
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/metadata-in-table-schema.md#implementations
+    parent: datapackage:recipes/metadata-in-table-schema.md
+    tier: section
+    source: datapackage
+    path: recipes/metadata-in-table-schema.md
+    anchor: implementations
+    title: Implementations
+    summary: The following links are actual examples already using this pattern, but not
+      100 % aligned with our proposal. The point is to make the Table Schema users converge
+      towards a common pattern, before considering changing the spec.
+    tags:
+    - guide
+    - recipes
+    - implementations
+    keywords:
+    - Implementations
+    - following
+    - links
+    - actual
+    - examples
+    - already
+    - using
+    - pattern
+    - but
+    - not
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 116
+    - 123
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/private-properties.md#specification
+    parent: datapackage:recipes/private-properties.md
+    tier: section
+    source: datapackage
+    path: recipes/private-properties.md
+    anchor: specification
+    title: Specification
+    summary: On any Frictionless Data descriptor, data that is not generated by the author/contributors,
+      but is generated by software/a system handling the data, SHOULD be considered as
+      "private", and be prefixed by an underscore _.
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - any
+    - Frictionless
+    - Data
+    - descriptor
+    - data
+    - not
+    - generated
+    - author
+    - contributors
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 22
+    - 57
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/relationship-between-fields.md#context
+    parent: datapackage:recipes/relationship-between-fields.md
+    tier: section
+    source: datapackage
+    path: recipes/relationship-between-fields.md
+    anchor: context
+    title: Context
+    summary: This subject was studied and treated for databases and led to the definition
+      of a methodology for specifying relationships and to the implementation of consistent
+      relational databases.
+    tags:
+    - guide
+    - recipes
+    - context
+    keywords:
+    - Context
+    - subject
+    - studied
+    - treated
+    - databases
+    - led
+    - definition
+    - methodology
+    - specifying
+    - relationships
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 39
+    - 52
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/relationship-between-fields.md#principles
+    parent: datapackage:recipes/relationship-between-fields.md
+    tier: section
+    source: datapackage
+    path: recipes/relationship-between-fields.md
+    anchor: principles
+    title: Principles
+    summary: 'Two aspects need to be addressed:'
+    tags:
+    - guide
+    - recipes
+    - principles
+    keywords:
+    - Principles
+    - Two
+    - aspects
+    - need
+    - addressed
+    - relationship
+    - expression
+    - methodology
+    - applied
+    - databases
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 53
+    - 68
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/relationship-between-fields.md#proposed-extensions
+    parent: datapackage:recipes/relationship-between-fields.md
+    tier: section
+    source: datapackage
+    path: recipes/relationship-between-fields.md
+    anchor: proposed-extensions
+    title: Proposed extensions
+    summary: 'A relationship is defined by the following information:'
+    tags:
+    - guide
+    - recipes
+    - proposed
+    - extensions
+    keywords:
+    - Proposed
+    - extensions
+    - relationship
+    - defined
+    - following
+    - information
+    - two
+    - fields
+    - involved
+    - order
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 69
+    - 122
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/relationship-between-fields.md#specification
+    parent: datapackage:recipes/relationship-between-fields.md
+    tier: section
+    source: datapackage
+    path: recipes/relationship-between-fields.md
+    anchor: specification
+    title: Specification
+    summary: 'Assuming solution 3 (table descriptor), the specification could be as follows:'
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - Assuming
+    - solution
+    - table
+    - descriptor
+    - specification
+    - could
+    - follows
+    - relationships
+    - MAY
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 123
+    - 154
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/relationship-between-fields.md#implementations
+    parent: datapackage:recipes/relationship-between-fields.md
+    tier: section
+    source: datapackage
+    path: recipes/relationship-between-fields.md
+    anchor: implementations
+    title: Implementations
+    summary: The implementation of a new descriptor is not discussed here (no particular
+      point to address).
+    tags:
+    - guide
+    - recipes
+    - implementations
+    keywords:
+    - Implementations
+    - implementation
+    - new
+    - descriptor
+    - not
+    - discussed
+    - here
+    - particular
+    - point
+    - address
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 155
+    - 171
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/translation-support.md#specification
+    parent: datapackage:recipes/translation-support.md
+    tier: section
+    source: datapackage
+    path: recipes/translation-support.md
+    anchor: specification
+    title: Specification
+    summary: Specification section in Translation Support.
+    tags:
+    - guide
+    - recipes
+    - specification
+    keywords:
+    - Specification
+    - Inline
+    - Uses
+    - column
+    - naming
+    - convention
+    - accessing
+    - translations
+    - Tabular
+    - resource
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 24
+    - 61
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/translation-support.md#inline
+    parent: datapackage:recipes/translation-support.md
+    tier: section
+    source: datapackage
+    path: recipes/translation-support.md
+    anchor: inline
+    title: Inline
+    summary: "**Uses a column naming convention for accessing translations**."
+    tags:
+    - guide
+    - recipes
+    - inline
+    keywords:
+    - Inline
+    - Uses
+    - column
+    - naming
+    - convention
+    - accessing
+    - translations
+    - Tabular
+    - resource
+    - descriptors
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 26
+    - 41
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:recipes/translation-support.md#co-located-translation-sources
+    parent: datapackage:recipes/translation-support.md
+    tier: section
+    source: datapackage
+    path: recipes/translation-support.md
+    anchor: co-located-translation-sources
+    title: Co-located translation sources
+    summary: "**Uses a file storage convention for accessing translations**."
+    tags:
+    - guide
+    - recipes
+    - co-located
+    - translation
+    - sources
+    keywords:
+    - Co-located
+    - translation
+    - sources
+    - Uses
+    - file
+    - storage
+    - convention
+    - accessing
+    - translations
+    - contributed
+    concepts: []
+    category: guide
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 42
+    - 61
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#introduction
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: introduction
+    title: Introduction
+    summary: 'A Data Package consists of:'
+    tags:
+    - reference
+    - standard
+    - introduction
+    keywords:
+    - Introduction
+    - Data
+    - Package
+    - consists
+    - Metadata
+    - describes
+    - structure
+    - contents
+    - package
+    - Resources
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 35
+    - 51
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#structure
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: structure
+    title: Structure
+    summary: 'A minimal data package on disk would be a directory containing a single
+      file:'
+    tags:
+    - reference
+    - standard
+    - structure
+    keywords:
+    - Structure
+    - minimal
+    - data
+    - package
+    - disk
+    - would
+    - directory
+    - containing
+    - single
+    - file
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 52
+    - 86
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#descriptor
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: descriptor
+    title: Descriptor
+    summary: Data Package descriptor MUST be a descriptor as per Descriptor definition.
+      A list of standard properties that can be included into a descriptor is defined
+      in the Properties section.
+    tags:
+    - reference
+    - standard
+    - descriptor
+    keywords:
+    - Descriptor
+    - Data
+    - Package
+    - descriptor
+    - MUST
+    - per
+    - standard
+    - glossary
+    - definition.
+    - list
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 87
+    - 117
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#properties
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: properties
+    title: Properties
+    summary: A Data Package descriptor MUST have resources property and SHOULD have name,
+      id, licenses, and profile properties.
+    tags:
+    - reference
+    - standard
+    - properties
+    keywords:
+    - Properties
+    - Data
+    - Package
+    - descriptor
+    - MUST
+    - resources
+    - property
+    - SHOULD
+    - name
+    - licenses
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 118
+    - 280
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#dollar-schema
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: dollar-schema
+    title: "$schema"
+    summary: A root level Data Package descriptor MAY have a $schema property that MUST
+      be a profile as per Profile definition that MUST include all the metadata constraints
+      required by this specification.
+    tags:
+    - reference
+    - standard
+    - v2
+    - "$schema"
+    keywords:
+    - "$schema"
+    - root
+    - level
+    - Data
+    - Package
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - profile
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 128
+    - 137
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#id
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: id
+    title: id
+    summary: A property reserved for globally unique identifiers. Examples of identifiers
+      that are unique include UUIDs and DOIs.
+    tags:
+    - reference
+    - standard
+    keywords:
+    - property
+    - reserved
+    - globally
+    - unique
+    - identifiers.
+    - Examples
+    - identifiers
+    - include
+    - UUIDs
+    - DOIs.
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 146
+    - 165
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#licenses
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: licenses
+    title: licenses
+    summary: The license(s) under which the package is provided.
+    tags:
+    - reference
+    - standard
+    - licenses
+    keywords:
+    - licenses
+    - license
+    - under
+    - which
+    - package
+    - provided.
+    - caution
+    - property
+    - not
+    - legally
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 166
+    - 189
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#created
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: created
+    title: created
+    summary: The datetime on which this was created.
+    tags:
+    - reference
+    - standard
+    - created
+    keywords:
+    - created
+    - datetime
+    - which
+    - created.
+    - Note
+    - semantics
+    - may
+    - vary
+    - between
+    - publishers
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 212
+    - 225
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#contributors
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: contributors
+    title: contributors
+    summary: The people or organizations who contributed to this Data Package. It MUST
+      be an array. Each entry is a Contributor and MUST be an object. A Contributor MUST
+      have at least one property. A Contributor is RECOMMENDED to have title property
+      and…
+    tags:
+    - reference
+    - standard
+    - contributors
+    keywords:
+    - contributors
+    - people
+    - organizations
+    - who
+    - contributed
+    - Data
+    - Package.
+    - MUST
+    - array.
+    - Each
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 230
+    - 262
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#sources
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: sources
+    title: sources
+    summary: 'The raw sources for this data package. It MUST be an array of Source objects.
+      A Source object MUST have at least one property. A Source object is RECOMMENDED
+      to have title property and MAY have path, email, and version properties:'
+    tags:
+    - reference
+    - standard
+    - sources
+    keywords:
+    - sources
+    - raw
+    - data
+    - package.
+    - MUST
+    - array
+    - Source
+    - objects.
+    - object
+    - least
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 263
+    - 280
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-package.mdx#related-work
+    parent: datapackage:standard/data-package.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-package.mdx
+    anchor: related-work
+    title: Related Work
+    summary: 'Data Package draws content and/or inspiration from, among others, the following
+      specifications and implementations:'
+    tags:
+    - reference
+    - standard
+    - related
+    - work
+    keywords:
+    - Related
+    - Work
+    - Data
+    - Package
+    - draws
+    - content
+    - inspiration
+    - among
+    - others
+    - following
+    concepts: [data-package-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 281
+    - 291
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#descriptor
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: descriptor
+    title: Descriptor
+    summary: Data Resource descriptor MUST be a descriptor as per Descriptor definition.
+      A list of standard properties that can be included into a descriptor is defined
+      in the Properties section.
+    tags:
+    - reference
+    - standard
+    - descriptor
+    keywords:
+    - Descriptor
+    - Data
+    - Resource
+    - descriptor
+    - MUST
+    - per
+    - standard
+    - glossary
+    - definition.
+    - list
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 35
+    - 57
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#properties
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: properties
+    title: Properties
+    summary: Standard properties of the descriptor are described below. A descriptor MAY
+      include any number of properties in additional to those described below as required
+      and optional properties.
+    tags:
+    - reference
+    - standard
+    - properties
+    keywords:
+    - Properties
+    - Standard
+    - properties
+    - descriptor
+    - described
+    - below.
+    - MAY
+    - include
+    - any
+    - number
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 58
+    - 277
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#general
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: general
+    title: General
+    summary: The properties below are applicable to any Data Resource.
+    tags:
+    - reference
+    - standard
+    - general
+    keywords:
+    - General
+    - properties
+    - below
+    - applicable
+    - any
+    - Data
+    - Resource.
+    - name
+    - required
+    - resource
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 62
+    - 209
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#path-or-data
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: path-or-data
+    title: path or data [required]
+    summary: 'A resource MUST contain a property describing the location of the data associated
+      to the resource. The location of resource data MUST be specified by the presence
+      of one (and only one) of these two properties:'
+    tags:
+    - reference
+    - standard
+    - path
+    - data
+    - required
+    keywords:
+    - path
+    - data
+    - required
+    - resource
+    - MUST
+    - contain
+    - property
+    - describing
+    - location
+    - associated
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 74
+    - 145
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#multiple-files
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: multiple-files
+    title: Multiple Files
+    summary: Usually, a resource will have only a single file associated to it. However,
+      sometimes it can be convenient to have a single resource whose data is split across
+      multiple files -- perhaps the data is large and having it in one file would be i…
+    tags:
+    - reference
+    - standard
+    - multiple
+    - files
+    keywords:
+    - Multiple
+    - Files
+    - Usually
+    - resource
+    - will
+    - only
+    - single
+    - file
+    - associated
+    - it.
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 5
+    line_range:
+    - 85
+    - 102
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#inline-data
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: inline-data
+    title: Inline Data
+    summary: Resource data rather than being stored in external files can be shipped inline
+      on a Resource using the data property.
+    tags:
+    - reference
+    - standard
+    - inline
+    - data
+    keywords:
+    - Inline
+    - Data
+    - Resource
+    - data
+    - rather
+    - than
+    - being
+    - stored
+    - external
+    - files
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 5
+    line_range:
+    - 103
+    - 145
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#type
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: type
+    title: type
+    summary: 'A Data Resource descriptor MAY contain a property type that MUST be a string
+      with the following possible values:'
+    tags:
+    - reference
+    - standard
+    - type
+    keywords:
+    - type
+    - Data
+    - Resource
+    - descriptor
+    - MAY
+    - contain
+    - property
+    - MUST
+    - string
+    - following
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 146
+    - 157
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#dollar-schema
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: dollar-schema
+    title: "$schema"
+    summary: A root level Data Resource descriptor MAY have a $schema property that MUST
+      be a profile as per Profile definition that MUST include all the metadata constraints
+      required by this specification.
+    tags:
+    - reference
+    - standard
+    - v2
+    - "$schema"
+    keywords:
+    - "$schema"
+    - root
+    - level
+    - Data
+    - Resource
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - profile
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 158
+    - 167
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#hash
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: hash
+    title: hash
+    summary: 'The MD5 hash for this resource. Other algorithms can be indicated by prefixing
+      the hash''s value with the algorithm name in lower-case. For example:'
+    tags:
+    - reference
+    - standard
+    - hash
+    keywords:
+    - hash
+    - MD5
+    - resource.
+    - Other
+    - algorithms
+    - can
+    - indicated
+    - prefixing
+    - value
+    - algorithm
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 192
+    - 201
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#tabular
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: tabular
+    title: Tabular
+    summary: The properties below are applicable to any Tabular Data Resource.
+    tags:
+    - reference
+    - standard
+    - tabular
+    keywords:
+    - Tabular
+    - properties
+    - below
+    - applicable
+    - any
+    - Data
+    - Resource.
+    - path
+    - data
+    - required
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 210
+    - 277
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#tabular-path-or-data
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: tabular-path-or-data
+    title: path or data [required]
+    summary: If the path property is used for providing data than it MUST contain Tabular
+      Data.
+    tags:
+    - reference
+    - standard
+    - path
+    - data
+    - required
+    keywords:
+    - path
+    - data
+    - required
+    - property
+    - used
+    - providing
+    - than
+    - MUST
+    - contain
+    - Tabular
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 214
+    - 241
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#dialect
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: dialect
+    title: dialect
+    summary: A Tabular Data Resource MAY have a dialect property to describe a tabular
+      dialect of the resource data. If provided, the dialect property MUST be a Table
+      Dialect descriptor in a form of an object or URL-or-Path.
+    tags:
+    - reference
+    - standard
+    - dialect
+    keywords:
+    - dialect
+    - Tabular
+    - Data
+    - Resource
+    - MAY
+    - property
+    - describe
+    - tabular
+    - resource
+    - data.
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 242
+    - 258
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/data-resource.mdx#schema
+    parent: datapackage:standard/data-resource.mdx
+    tier: section
+    source: datapackage
+    path: standard/data-resource.mdx
+    anchor: schema
+    title: schema
+    summary: A Tabular Data Resource SHOULD have a schema property to describe a tabular
+      schema of the resource data. If provided, the schema property MUST be a Table Schema
+      descriptor in a form of an object or URL-or-Path.
+    tags:
+    - reference
+    - standard
+    - schema
+    keywords:
+    - schema
+    - Tabular
+    - Data
+    - Resource
+    - SHOULD
+    - property
+    - describe
+    - tabular
+    - resource
+    - data.
+    concepts: [data-resource-standard, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 259
+    - 277
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/extensions.mdx#extension
+    parent: datapackage:standard/extensions.mdx
+    tier: section
+    source: datapackage
+    path: standard/extensions.mdx
+    anchor: extension
+    title: Extension
+    summary: The Data Package Standard has a simple yet powerful extension mechanism based
+      on the Profile concept. An extension is, generally speaking, a project that provides
+      one or more domain-specific profiles to the Data Package Standard specificati…
+    tags:
+    - reference
+    - standard
+    - extension
+    keywords:
+    - Extension
+    - Data
+    - Package
+    - Standard
+    - simple
+    - yet
+    - powerful
+    - extension
+    - mechanism
+    - based
+    concepts: [extensions, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 37
+    - 55
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/extensions.mdx#example
+    parent: datapackage:standard/extensions.mdx
+    tier: section
+    source: datapackage
+    path: standard/extensions.mdx
+    anchor: example
+    title: Example
+    summary: For example, we will create a Spatial Data Package that requires a geopoint
+      marker to be provided for each resource consisting a Data Package.
+    tags:
+    - reference
+    - standard
+    - example
+    keywords:
+    - Example
+    - example
+    - will
+    - create
+    - Spatial
+    - Data
+    - Package
+    - requires
+    - geopoint
+    - marker
+    concepts: [extensions, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 56
+    - 123
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/extensions.mdx#profile
+    parent: datapackage:standard/extensions.mdx
+    tier: section
+    source: datapackage
+    path: standard/extensions.mdx
+    anchor: profile
+    title: Profile
+    summary: 'First of all, we need to create a Data Package profile. Note that it includes
+      a default data package profile as per the specification requirement:'
+    tags:
+    - reference
+    - standard
+    - profile
+    keywords:
+    - Profile
+    - First
+    - all
+    - need
+    - create
+    - Data
+    - Package
+    - profile.
+    - Note
+    - includes
+    concepts: [extensions, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 60
+    - 99
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/extensions.mdx#descriptor
+    parent: datapackage:standard/extensions.mdx
+    tier: section
+    source: datapackage
+    path: standard/extensions.mdx
+    anchor: descriptor
+    title: Descriptor
+    summary: 'Consider that the profile above is published at https://spatial.datapackage.org/profiles/1.0/datapackage.json.
+      In this case, a Data Package descriptor compatible to exemplar Spatial Data Package
+      (v1) will look as below:'
+    tags:
+    - reference
+    - standard
+    - descriptor
+    keywords:
+    - Descriptor
+    - Consider
+    - profile
+    - above
+    - published
+    - https
+    - spatial.datapackage.org
+    - profiles
+    - datapackage.json
+    - case
+    concepts: [extensions, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 100
+    - 120
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/glossary.mdx#definitions
+    parent: datapackage:standard/glossary.mdx
+    tier: section
+    source: datapackage
+    path: standard/glossary.mdx
+    anchor: definitions
+    title: Definitions
+    summary: Definitions section in Glossary.
+    tags:
+    - reference
+    - standard
+    - definitions
+    keywords:
+    - Definitions
+    - Profile
+    - profile
+    - URL
+    - MUST
+    - resolves
+    - valid
+    - JSON
+    - Schema
+    - descriptor
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 28
+    - 147
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/glossary.mdx#profile
+    parent: datapackage:standard/glossary.mdx
+    tier: section
+    source: datapackage
+    path: standard/glossary.mdx
+    anchor: profile
+    title: Profile
+    summary: 'A profile is a URL that MUST:'
+    tags:
+    - reference
+    - standard
+    - profile
+    keywords:
+    - Profile
+    - profile
+    - URL
+    - MUST
+    - resolves
+    - valid
+    - JSON
+    - Schema
+    - descriptor
+    - under
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 30
+    - 46
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/glossary.mdx#descriptor
+    parent: datapackage:standard/glossary.mdx
+    tier: section
+    source: datapackage
+    path: standard/glossary.mdx
+    anchor: descriptor
+    title: Descriptor
+    summary: The Data Package Standard uses a concept of a descriptor to represent metadata
+      defined according to the core specefications such as Data Package or Table Schema.
+    tags:
+    - reference
+    - standard
+    - descriptor
+    keywords:
+    - Descriptor
+    - Data
+    - Package
+    - Standard
+    - uses
+    - concept
+    - descriptor
+    - represent
+    - metadata
+    - defined
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 47
+    - 60
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/glossary.mdx#custom-properties
+    parent: datapackage:standard/glossary.mdx
+    tier: section
+    source: datapackage
+    path: standard/glossary.mdx
+    anchor: custom-properties
+    title: Custom Properties
+    summary: The Data Package specifications define a set of standard properties to be
+      used and allows custom properties to be added. It is RECOMMENDED to use namespace:property
+      naming convention for custom properties. It is RECOMMENDED to use lower cam…
+    tags:
+    - reference
+    - standard
+    - custom
+    - properties
+    keywords:
+    - Custom
+    - Properties
+    - Data
+    - Package
+    - specifications
+    - define
+    - set
+    - standard
+    - properties
+    - used
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 61
+    - 78
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/glossary.mdx#url-or-path
+    parent: datapackage:standard/glossary.mdx
+    tier: section
+    source: datapackage
+    path: standard/glossary.mdx
+    anchor: url-or-path
+    title: URL or Path
+    summary: 'A URL or Path is a string with the following additional constraints:'
+    tags:
+    - reference
+    - standard
+    - url
+    - path
+    keywords:
+    - URL
+    - Path
+    - string
+    - following
+    - additional
+    - constraints
+    - MUST
+    - either
+    - POSIX
+    - path
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 79
+    - 106
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/glossary.mdx#tabular-data
+    parent: datapackage:standard/glossary.mdx
+    tier: section
+    source: datapackage
+    path: standard/glossary.mdx
+    anchor: tabular-data
+    title: Tabular Data
+    summary: Tabular data consists of a set of rows. Each row has a set of fields (columns).
+      We usually expect that each row has the same set of fields and thus we can talk
+      about _the_ fields for the table as a whole.
+    tags:
+    - reference
+    - standard
+    - tabular
+    - data
+    keywords:
+    - Tabular
+    - Data
+    - data
+    - consists
+    - set
+    - rows.
+    - Each
+    - row
+    - fields
+    - columns
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 107
+    - 136
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/glossary.mdx#data-representation
+    parent: datapackage:standard/glossary.mdx
+    tier: section
+    source: datapackage
+    path: standard/glossary.mdx
+    anchor: data-representation
+    title: Data Representation
+    summary: In order to talk about the representation and processing of tabular data
+      from text-based sources, it is useful to introduce the concepts of the _physical_
+      and the _logical_ representation of data.
+    tags:
+    - reference
+    - standard
+    - data
+    - representation
+    keywords:
+    - Data
+    - Representation
+    - order
+    - talk
+    - about
+    - representation
+    - processing
+    - tabular
+    - data
+    - text-based
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 137
+    - 147
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/security.mdx#usage-perspective
+    parent: datapackage:standard/security.mdx
+    tier: section
+    source: datapackage
+    path: standard/security.mdx
+    anchor: usage-perspective
+    title: Usage Perspective
+    summary: 'Data packages is a container format that allows the creator to specify payload
+      data (Resources) either as JSON objects/arrays or via pointers. There are two pointer
+      formats:'
+    tags:
+    - reference
+    - standard
+    - usage
+    - perspective
+    keywords:
+    - Usage
+    - Perspective
+    - Data
+    - packages
+    - container
+    - format
+    - allows
+    - creator
+    - specify
+    - payload
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 24
+    - 90
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/security.mdx#dangerous-descriptor-resource-pointer-combinations
+    parent: datapackage:standard/security.mdx
+    tier: section
+    source: datapackage
+    path: standard/security.mdx
+    anchor: dangerous-descriptor-resource-pointer-combinations
+    title: Dangerous Descriptor/Resource pointer combinations
+    summary: 'How to read the table: if your "datapackage.json"-file comes from one of
+      the sources on the left, you should treat Resources in the format on the top as:'
+    tags:
+    - reference
+    - standard
+    - dangerous
+    - descriptor
+    - resource
+    keywords:
+    - Dangerous
+    - Descriptor
+    - Resource
+    - pointer
+    - combinations
+    - How
+    - read
+    - table
+    - your
+    - datapackage.json
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 35
+    - 90
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/security.mdx#descriptor-source-is-a-local-relative-path
+    parent: datapackage:standard/security.mdx
+    tier: section
+    source: datapackage
+    path: standard/security.mdx
+    anchor: descriptor-source-is-a-local-relative-path
+    title: Descriptor source is a local relative path
+    summary: If your descriptor is loaded via a local relative path, and the source of
+      the Data Package is not fully trusted, you SHOULD NOT allow Data Packages with Resource
+      pointers in
+    tags:
+    - reference
+    - standard
+    - descriptor
+    - source
+    - local
+    keywords:
+    - Descriptor
+    - source
+    - local
+    - relative
+    - path
+    - your
+    - descriptor
+    - loaded
+    - via
+    - Data
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 54
+    - 64
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/security.mdx#descriptor-source-is-a-json-object
+    parent: datapackage:standard/security.mdx
+    tier: section
+    source: datapackage
+    path: standard/security.mdx
+    anchor: descriptor-source-is-a-json-object
+    title: Descriptor source is a JSON object
+    summary: If the Descriptor is not loaded from file but created in-memory and the source
+      of the Data Package is not fully trusted, you SHOULD NOT allow Data Packages with
+      Resource pointers in
+    tags:
+    - reference
+    - standard
+    - descriptor
+    - source
+    - json
+    keywords:
+    - Descriptor
+    - source
+    - JSON
+    - object
+    - not
+    - loaded
+    - file
+    - but
+    - created
+    - in-memory
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 76
+    - 86
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/security.mdx#implemention-perspective
+    parent: datapackage:standard/security.mdx
+    tier: section
+    source: datapackage
+    path: standard/security.mdx
+    anchor: implemention-perspective
+    title: Implemention Perspective
+    summary: 'Two kinds of Resource pointers can never be guaranteed to be totally safe:'
+    tags:
+    - reference
+    - standard
+    - implemention
+    - perspective
+    keywords:
+    - Implemention
+    - Perspective
+    - Two
+    - kinds
+    - Resource
+    - pointers
+    - can
+    - never
+    - guaranteed
+    - totally
+    concepts: [datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 91
+    - 109
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#introduction
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: introduction
+    title: Introduction
+    summary: Table Dialect defines set of properties that can be used by data producers
+      and data consumers to ensure data interoperability in various Tabular Data formats
+      such as CSV, JSON, or Excel. The main goal of this specification is to define a
+      co…
+    tags:
+    - reference
+    - standard
+    - introduction
+    keywords:
+    - Introduction
+    - Table
+    - Dialect
+    - defines
+    - set
+    - properties
+    - can
+    - used
+    - data
+    - producers
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 36
+    - 47
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#descriptor
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: descriptor
+    title: Descriptor
+    summary: Table Dialect descriptor MUST be a descriptor as per Descriptor definition.
+      A list of standard properties that can be included into a descriptor is defined
+      in the Properties section.
+    tags:
+    - reference
+    - standard
+    - descriptor
+    keywords:
+    - Descriptor
+    - Table
+    - Dialect
+    - descriptor
+    - MUST
+    - per
+    - standard
+    - glossary
+    - definition.
+    - list
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 48
+    - 61
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#tabular-data-formats
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: tabular-data-formats
+    title: Tabular Data Formats
+    summary: Table Dialect can be used for different data formats, such as delimited text
+      files, semi-structured formats and spreadsheets. Some properties are generic and
+      can be used for multiple formats, while others are specific to one format.
+    tags:
+    - reference
+    - standard
+    - tabular
+    - data
+    - formats
+    keywords:
+    - Tabular
+    - Data
+    - Formats
+    - Table
+    - Dialect
+    - can
+    - used
+    - different
+    - data
+    - formats
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 62
+    - 144
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#delimited
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: delimited
+    title: Delimited
+    summary: 'Delimited formats is a group of textual formats such as CSV and TSV. Their
+      charactistics can be expressed the following properties:'
+    tags:
+    - reference
+    - standard
+    - delimited
+    keywords:
+    - Delimited
+    - formats
+    - group
+    - textual
+    - such
+    - CSV
+    - TSV.
+    - Their
+    - charactistics
+    - can
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 83
+    - 114
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#structured
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: structured
+    title: Structured
+    summary: 'Structured formats is a group of structured or semi-structured formats such
+      as JSON and YAML. Their charactistics can be expressed the following properties:'
+    tags:
+    - reference
+    - standard
+    - structured
+    keywords:
+    - Structured
+    - formats
+    - group
+    - structured
+    - semi-structured
+    - such
+    - JSON
+    - YAML.
+    - Their
+    - charactistics
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 115
+    - 124
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#spreadsheet
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: spreadsheet
+    title: Spreadsheet
+    summary: 'Spreadsheet formats is a group of sheet-based formats such as Excel or ODS.
+      Their charactistics can be expressed the following properties:'
+    tags:
+    - reference
+    - standard
+    - spreadsheet
+    keywords:
+    - Spreadsheet
+    - formats
+    - group
+    - sheet-based
+    - such
+    - Excel
+    - ODS.
+    - Their
+    - charactistics
+    - can
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 125
+    - 137
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#properties
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: properties
+    title: Properties
+    summary: Properties section in Table Dialect Specification.
+    tags:
+    - reference
+    - standard
+    - properties
+    keywords:
+    - Properties
+    - "$schema"
+    - dollar-schema
+    - root
+    - level
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 145
+    - 630
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#header
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: header
+    title: header
+    summary: A Table Dialect descriptor MAY have the header property that MUST be boolean
+      with default value true. This property indicates whether the file includes a header
+      row. If true the first row in the file MUST be interpreted as a header row, not…
+    tags:
+    - reference
+    - standard
+    - header
+    keywords:
+    - header
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - boolean
+    - default
+    - value
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 153
+    - 180
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#headerRows
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: headerRows
+    title: headerRows
+    summary: A Table Dialect descriptor MAY have the headerRows property that MUST be
+      an array of positive integers starting from 1 with default value [1]. This property
+      specifies the row numbers for the header. It is RECOMMENDED to be used for multilin…
+    tags:
+    - reference
+    - standard
+    - headerrows
+    keywords:
+    - headerRows
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - array
+    - positive
+    - integers
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 181
+    - 208
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#headerJoin
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: headerJoin
+    title: headerJoin
+    summary: A Table Dialect descriptor MAY have the headerJoin property that MUST be
+      a string with default value " ". This property specifies how multiline-header files
+      have to join the resulting header rows.
+    tags:
+    - reference
+    - standard
+    - headerjoin
+    keywords:
+    - headerJoin
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - default
+    - value
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 209
+    - 237
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#commentRows
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: commentRows
+    title: commentRows
+    summary: A Table Dialect descriptor MAY have the commentRows property that MUST be
+      an array of positive integers starting from 1; undefined by default. This property
+      specifies what rows have to be omitted from the data.
+    tags:
+    - reference
+    - standard
+    - commentrows
+    keywords:
+    - commentRows
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - array
+    - positive
+    - integers
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 238
+    - 265
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#commentChar
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: commentChar
+    title: commentChar
+    summary: A Table Dialect descriptor MAY have the commentChar property that MUST be
+      a string of one or more characters; undefined by default. This property specifies
+      what rows have to be omitted from the data based on the row's first characters.
+    tags:
+    - reference
+    - standard
+    - commentchar
+    keywords:
+    - commentChar
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - one
+    - more
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 266
+    - 293
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#delimiter
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: delimiter
+    title: delimiter
+    summary: A Table Dialect descriptor MAY have the delimiter property that MUST be a
+      string; with default value , (comma). This property specifies the character sequence
+      which separates fields in the data file.
+    tags:
+    - reference
+    - standard
+    - delimiter
+    keywords:
+    - delimiter
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - default
+    - value
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 294
+    - 320
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#lineTerminator
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: lineTerminator
+    title: lineTerminator
+    summary: A Table Dialect descriptor MAY have the lineTerminator property that MUST
+      be a string; with default value \r\n. This property specifies the character sequence
+      which terminates rows.
+    tags:
+    - reference
+    - standard
+    - lineterminator
+    keywords:
+    - lineTerminator
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - default
+    - value
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 321
+    - 345
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#quoteChar
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: quoteChar
+    title: quoteChar
+    summary: A Table Dialect descriptor MAY have the quoteChar property that MUST be a
+      string of one character length with default value " (double quote). This property
+      specifies a character to use for quoting in case the delimiter needs to be used
+      insi…
+    tags:
+    - reference
+    - standard
+    - quotechar
+    keywords:
+    - quoteChar
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - one
+    - character
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 346
+    - 372
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#doubleQuote
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: doubleQuote
+    title: doubleQuote
+    summary: A Table Dialect descriptor MAY have the doubleQuote property that MUST be
+      boolean with default value true. This property controls the handling of quoteChar
+      inside data cells. If true, two consecutive quotes are interpreted as one.
+    tags:
+    - reference
+    - standard
+    - doublequote
+    keywords:
+    - doubleQuote
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - boolean
+    - default
+    - value
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 373
+    - 399
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#escapeChar
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: escapeChar
+    title: escapeChar
+    summary: A Table Dialect descriptor MAY have the escapeChar property that MUST be
+      a string of one character length; undefined by default. This property specifies
+      a one-character string to use for escaping, for example, \, mutually exclusive with
+      quo…
+    tags:
+    - reference
+    - standard
+    - escapechar
+    keywords:
+    - escapeChar
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - one
+    - character
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 400
+    - 426
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#nullSequence
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: nullSequence
+    title: nullSequence
+    summary: A Table Dialect descriptor MAY have the nullSequence property that MUST be
+      a string; undefined by default. This property specifies the null sequence, for example,
+      \N.
+    tags:
+    - reference
+    - standard
+    - nullsequence
+    keywords:
+    - nullSequence
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - undefined
+    - default.
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 427
+    - 453
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#skipInitialSpace
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: skipInitialSpace
+    title: skipInitialSpace
+    summary: A Table Dialect descriptor MAY have the skipInitialSpace property that MUST
+      be boolean with default value false. This property specifies how to interpret whitespace
+      which immediately follows a delimiter; if false, it means that whitespace i…
+    tags:
+    - reference
+    - standard
+    - skipinitialspace
+    keywords:
+    - skipInitialSpace
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - boolean
+    - default
+    - value
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 454
+    - 480
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#property
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: property
+    title: property
+    summary: A Table Dialect descriptor MAY have the property property that MUST be a
+      string; undefined by default. This property specifies where a data array is located
+      in the data structure.
+    tags:
+    - reference
+    - standard
+    - property
+    keywords:
+    - property
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - MUST
+    - string
+    - undefined
+    - default.
+    - specifies
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 481
+    - 510
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#itemType
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: itemType
+    title: itemType
+    summary: A Table Dialect descriptor MAY have the itemType property that MUST be a
+      string with value array or object; undefined by default. This property specifies
+      whether the data property contains an array of arrays or an array of objects.
+    tags:
+    - reference
+    - standard
+    - itemtype
+    keywords:
+    - itemType
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - value
+    - array
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 511
+    - 539
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#itemKeys
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: itemKeys
+    title: itemKeys
+    summary: A Table Dialect descriptor MAY have the itemKeys property that MUST be array
+      of strings; undefined by default. This property specifies the way of extracting
+      rows from data arrays with itemType is object.
+    tags:
+    - reference
+    - standard
+    - itemkeys
+    keywords:
+    - itemKeys
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - array
+    - strings
+    - undefined
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 540
+    - 567
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#sheetNumber
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: sheetNumber
+    title: sheetNumber
+    summary: A Table Dialect descriptor MAY have the sheetNumber property that MUST be
+      an integer with default value 1. This property specifies a sheet number of a table
+      in the spreadsheet file.
+    tags:
+    - reference
+    - standard
+    - sheetnumber
+    keywords:
+    - sheetNumber
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - integer
+    - default
+    - value
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 568
+    - 588
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#sheetName
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: sheetName
+    title: sheetName
+    summary: A Table Dialect descriptor MAY have the sheetName property that MUST be a
+      string; undefined by default. This property specifies a sheet name of a table in
+      the spreadsheet file.
+    tags:
+    - reference
+    - standard
+    - sheetname
+    keywords:
+    - sheetName
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - undefined
+    - default.
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 589
+    - 609
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-dialect.mdx#table
+    parent: datapackage:standard/table-dialect.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-dialect.mdx
+    anchor: table
+    title: table
+    summary: A Table Dialect descriptor MAY have the table property that MUST be a string;
+      undefined by default. This property specifies a name of the table in the database.
+    tags:
+    - reference
+    - standard
+    - table
+    keywords:
+    - table
+    - Table
+    - Dialect
+    - descriptor
+    - MAY
+    - property
+    - MUST
+    - string
+    - undefined
+    - default.
+    concepts: [table-dialect, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 610
+    - 630
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#descriptor
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: descriptor
+    title: Descriptor
+    summary: Table Schema descriptor MUST be a descriptor as per Descriptor definition.
+      A list of standard properties that can be included into a descriptor is defined
+      in the Properties section.
+    tags:
+    - reference
+    - standard
+    - descriptor
+    keywords:
+    - Descriptor
+    - Table
+    - Schema
+    - descriptor
+    - MUST
+    - per
+    - standard
+    - glossary
+    - definition.
+    - list
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 47
+    - 72
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#properties
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: properties
+    title: Properties
+    summary: Properties section in Table Schema Specification.
+    tags:
+    - reference
+    - standard
+    - properties
+    keywords:
+    - Properties
+    - Schema
+    - Table
+    - descriptor
+    - MAY
+    - contain
+    - these
+    - standard
+    - properties
+    - fields
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 73
+    - 445
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#schema
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: schema
+    title: Schema
+    summary: 'A Table Schema descriptor MAY contain these standard properties:'
+    tags:
+    - reference
+    - standard
+    - schema
+    keywords:
+    - Schema
+    - Table
+    - descriptor
+    - MAY
+    - contain
+    - these
+    - standard
+    - properties
+    - fields
+    - required
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 75
+    - 279
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#fieldsMatch
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: fieldsMatch
+    title: fieldsMatch
+    summary: 'A Table Schema descriptor MAY contain a property fieldsMatch that MUST be
+      a string with the following possible values and the exact value by default:'
+    tags:
+    - reference
+    - standard
+    - v2
+    - fieldsmatch
+    keywords:
+    - fieldsMatch
+    - Table
+    - Schema
+    - descriptor
+    - MAY
+    - contain
+    - property
+    - MUST
+    - string
+    - following
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 91
+    - 100
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#missingValues
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: missingValues
+    title: missingValues
+    summary: Many datasets arrive with missing data values, either because a value was
+      not collected or it never existed. Missing values may be indicated simply by the
+      value being empty in other cases a special value may have been used e.g. -, NaN,
+      0, -…
+    tags:
+    - reference
+    - standard
+    - v2
+    - missingvalues
+    keywords:
+    - missingValues
+    - Many
+    - datasets
+    - arrive
+    - missing
+    - data
+    - values
+    - either
+    - because
+    - value
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 101
+    - 129
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#primaryKey
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: primaryKey
+    title: primaryKey
+    summary: 'A primary key is a field or set of fields that uniquely identifies each
+      row in the table. Per SQL standards, the fields cannot be null, so their use in
+      the primary key is equivalent to adding required: true to their constraints.'
+    tags:
+    - reference
+    - standard
+    - primarykey
+    keywords:
+    - primaryKey
+    - primary
+    - key
+    - field
+    - set
+    - fields
+    - uniquely
+    - identifies
+    - each
+    - row
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 130
+    - 161
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#uniqueKeys
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: uniqueKeys
+    title: uniqueKeys
+    summary: A unique key is a field or a set of fields that are required to have unique
+      logical values in each row in the table. It is directly modeled on the concept of
+      unique constraint in SQL.
+    tags:
+    - reference
+    - standard
+    - uniquekeys
+    keywords:
+    - uniqueKeys
+    - unique
+    - key
+    - field
+    - set
+    - fields
+    - required
+    - logical
+    - values
+    - each
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 162
+    - 202
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#foreignKeys
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: foreignKeys
+    title: foreignKeys
+    summary: A foreign key is a reference where values in a field (or fields) on the table
+      ('resource' in data package terminology) described by this Table Schema connect
+      to values a field (or fields) on this or a separate table (resource). They are dir…
+    tags:
+    - reference
+    - standard
+    - foreignkeys
+    keywords:
+    - foreignKeys
+    - foreign
+    - key
+    - reference
+    - where
+    - values
+    - field
+    - fields
+    - table
+    - resource
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 203
+    - 279
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#field
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: field
+    title: Field
+    summary: A field descriptor MUST be a JSON object that describes a single field. The
+      descriptor provides additional human-readable documentation for a field, as well
+      as additional information that can be used to validate the field or create a user
+      i…
+    tags:
+    - reference
+    - standard
+    - field
+    keywords:
+    - Field
+    - field
+    - descriptor
+    - MUST
+    - JSON
+    - object
+    - describes
+    - single
+    - field.
+    - provides
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 280
+    - 445
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#type-and-format
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: type-and-format
+    title: type and format
+    summary: These properties are used to give the type of the field (string, number,
+      etc.) - see below for more detail. If type is not provided a consumer MUST utilize
+      the any type for the field instead of inferring it from the field's values.
+    tags:
+    - reference
+    - standard
+    - type
+    - format
+    keywords:
+    - type
+    - format
+    - These
+    - properties
+    - used
+    - give
+    - field
+    - string
+    - number
+    - etc.
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 310
+    - 325
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#categories
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: categories
+    title: categories
+    summary: string and integer field types MAY include a categories property to restrict
+      the field to a finite set of possible values (similar to an enum constraint) and
+      indicate that the field MAY be loaded as a categorical data type if supported by
+      t…
+    tags:
+    - reference
+    - standard
+    - categories
+    keywords:
+    - categories
+    - string
+    - integer
+    - field
+    - types
+    - MAY
+    - include
+    - property
+    - restrict
+    - finite
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 342
+    - 371
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#categoriesOrdered
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: categoriesOrdered
+    title: categoriesOrdered
+    summary: When the categories property is defined, it MAY be accompanied by a categoriesOrdered
+      property in the field definition. When present, the categoriesOrdered property MUST
+      be boolean. When categoriesOrdered is true, implementations SHOULD reg…
+    tags:
+    - reference
+    - standard
+    - categoriesordered
+    keywords:
+    - categoriesOrdered
+    - When
+    - categories
+    - property
+    - defined
+    - MAY
+    - accompanied
+    - field
+    - definition.
+    - present
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 372
+    - 392
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#field-missingValues
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: field-missingValues
+    title: missingValues
+    summary: A list of missing values for this field as per Missing Values definition.
+      If this property is defined, it takes precedence over the schema-level property
+      and completely replaces it for the field without combining the values.
+    tags:
+    - reference
+    - standard
+    - v2
+    - missingvalues
+    keywords:
+    - missingValues
+    - list
+    - missing
+    - values
+    - field
+    - per
+    - Missing
+    - Values
+    - definition.
+    - property
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 393
+    - 416
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#rdfType
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: rdfType
+    title: rdfType
+    summary: A richer, "semantic", description of the "type" of data in a given column
+      MAY be provided using a rdfType property on a field descriptor.
+    tags:
+    - reference
+    - standard
+    - rdftype
+    keywords:
+    - rdfType
+    - richer
+    - semantic
+    - description
+    - type
+    - data
+    - given
+    - column
+    - MAY
+    - provided
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 4
+    line_range:
+    - 417
+    - 445
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#field-types
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: field-types
+    title: Field Types
+    summary: The type list with associated formats and other related properties is as
+      follows.
+    tags:
+    - reference
+    - standard
+    - field
+    - types
+    keywords:
+    - Field
+    - Types
+    - type
+    - list
+    - associated
+    - formats
+    - other
+    - related
+    - properties
+    - follows.
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 446
+    - 634
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#string
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: string
+    title: string
+    summary: The field contains strings, that is, sequences of characters.
+    tags:
+    - reference
+    - standard
+    - string
+    keywords:
+    - string
+    - field
+    - contains
+    - strings
+    - sequences
+    - characters.
+    - Supported
+    - formats
+    - default
+    - any
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 450
+    - 461
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#number
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: number
+    title: number
+    summary: The field contains numbers of any kind including decimals.
+    tags:
+    - reference
+    - standard
+    - number
+    keywords:
+    - number
+    - field
+    - contains
+    - numbers
+    - any
+    - kind
+    - including
+    - decimals.
+    - lexical
+    - formatting
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 462
+    - 483
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#integer
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: integer
+    title: integer
+    summary: The field contains integers - that is whole numbers.
+    tags:
+    - reference
+    - standard
+    - integer
+    keywords:
+    - integer
+    - field
+    - contains
+    - integers
+    - whole
+    - numbers.
+    - Integer
+    - values
+    - indicated
+    - standard
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 484
+    - 494
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#boolean
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: boolean
+    title: boolean
+    summary: The field contains boolean (true/false) data.
+    tags:
+    - reference
+    - standard
+    - boolean
+    keywords:
+    - boolean
+    - field
+    - contains
+    - 'true'
+    - 'false'
+    - data.
+    - physical
+    - representations
+    - data
+    - where
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 495
+    - 505
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#list
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: list
+    title: list
+    summary: The field contains data that is an ordered one-level depth collection of
+      primitive values with a fixed item type. In the lexical representation, the field
+      MUST contain a string with values separated by a delimiter which is , (comma) by
+      defa…
+    tags:
+    - reference
+    - standard
+    - list
+    keywords:
+    - list
+    - field
+    - contains
+    - data
+    - ordered
+    - one-level
+    - depth
+    - collection
+    - primitive
+    - values
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 514
+    - 524
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#datetime
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: datetime
+    title: datetime
+    summary: The field contains a date with a time.
+    tags:
+    - reference
+    - standard
+    - datetime
+    keywords:
+    - datetime
+    - field
+    - contains
+    - date
+    - time.
+    - Supported
+    - formats
+    - default
+    - lexical
+    - representation
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 525
+    - 534
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#date
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: date
+    title: date
+    summary: The field contains a date without a time.
+    tags:
+    - reference
+    - standard
+    - date
+    keywords:
+    - date
+    - field
+    - contains
+    - without
+    - time.
+    - Supported
+    - formats
+    - default
+    - lexical
+    - representation
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 535
+    - 544
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#time
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: time
+    title: time
+    summary: The field contains a time without a date.
+    tags:
+    - reference
+    - standard
+    - time
+    keywords:
+    - time
+    - field
+    - contains
+    - without
+    - date.
+    - Supported
+    - formats
+    - default
+    - lexical
+    - representation
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 545
+    - 554
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#geopoint
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: geopoint
+    title: geopoint
+    summary: The field contains data describing a geographic point.
+    tags:
+    - reference
+    - standard
+    - geopoint
+    keywords:
+    - geopoint
+    - field
+    - contains
+    - data
+    - describing
+    - geographic
+    - point.
+    - Supported
+    - formats
+    - default
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 571
+    - 580
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#any
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: any
+    title: any
+    summary: The field contains values of a unspecified or mixed type. A data consumer
+      MUST NOT perform any processing on this field's values and MUST interpret them as
+      it is in the data source. This data type is directly modelled on the concept of
+      the…
+    tags:
+    - reference
+    - standard
+    - any
+    keywords:
+    - any
+    - field
+    - contains
+    - values
+    - unspecified
+    - mixed
+    - type.
+    - data
+    - consumer
+    - MUST
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 590
+    - 634
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#field-constraints
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: field-constraints
+    title: Field Constraints
+    summary: The constraints property on Table Schema Fields can be used by consumers
+      to list constraints for validating field values. For example, validating the data
+      in a Tabular Data Resource against its Table Schema; or as a means to validate data
+      b…
+    tags:
+    - reference
+    - standard
+    - field
+    - constraints
+    keywords:
+    - Field
+    - Constraints
+    - constraints
+    - property
+    - Table
+    - Schema
+    - Fields
+    - can
+    - used
+    - consumers
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 635
+    - 974
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#required
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: required
+    title: required
+    summary: "- **Type**: boolean - **Fields**: all"
+    tags:
+    - reference
+    - standard
+    - required
+    keywords:
+    - required
+    - Type
+    - boolean
+    - Fields
+    - all
+    - Indicates
+    - whether
+    - field
+    - cannot
+    - 'null'
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 643
+    - 670
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#unique
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: unique
+    title: unique
+    summary: "- **Type**: boolean - **Fields**: all"
+    tags:
+    - reference
+    - standard
+    - unique
+    keywords:
+    - unique
+    - Type
+    - boolean
+    - Fields
+    - all
+    - 'true'
+    - then
+    - values
+    - field
+    - MUST
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 671
+    - 698
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#minLength
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: minLength
+    title: minLength
+    summary: "- **Type**: integer - **Fields**: collections (string, array, object)"
+    tags:
+    - reference
+    - standard
+    - minlength
+    keywords:
+    - minLength
+    - Type
+    - integer
+    - Fields
+    - collections
+    - string
+    - array
+    - object
+    - specifies
+    - minimum
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 699
+    - 726
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#maxLength
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: maxLength
+    title: maxLength
+    summary: "- **Type**: integer - **Fields**: collections (string, array, object)"
+    tags:
+    - reference
+    - standard
+    - maxlength
+    keywords:
+    - maxLength
+    - Type
+    - integer
+    - Fields
+    - collections
+    - string
+    - array
+    - object
+    - specifies
+    - maximum
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 727
+    - 754
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#minimum
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: minimum
+    title: minimum
+    summary: "- **Type**: integer, number, date, time, datetime, duration, year, yearmonth
+      - **Fields**: integer, number, date, time, datetime, duration, year, yearmonth"
+    tags:
+    - reference
+    - standard
+    - minimum
+    keywords:
+    - minimum
+    - Type
+    - integer
+    - number
+    - date
+    - time
+    - datetime
+    - duration
+    - year
+    - yearmonth
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 755
+    - 783
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#maximum
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: maximum
+    title: maximum
+    summary: "- **Type**: integer, number, date, time, datetime, duration, year, yearmonth
+      - **Fields**: integer, number, date, time, datetime, duration, year, yearmonth"
+    tags:
+    - reference
+    - standard
+    - maximum
+    keywords:
+    - maximum
+    - Type
+    - integer
+    - number
+    - date
+    - time
+    - datetime
+    - duration
+    - year
+    - yearmonth
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 784
+    - 812
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#exclusiveMinimum
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: exclusiveMinimum
+    title: exclusiveMinimum
+    summary: "- **Type**: integer, number, date, time, datetime, duration, year, yearmonth
+      - **Fields**: integer, number, date, time, datetime, duration, year, yearmonth"
+    tags:
+    - reference
+    - standard
+    - exclusiveminimum
+    keywords:
+    - exclusiveMinimum
+    - Type
+    - integer
+    - number
+    - date
+    - time
+    - datetime
+    - duration
+    - year
+    - yearmonth
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 813
+    - 841
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#exclusiveMaximum
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: exclusiveMaximum
+    title: exclusiveMaximum
+    summary: "- **Type**: integer, number, date, time, datetime, duration, year, yearmonth
+      - **Fields**: integer, number, date, time, datetime, duration, year, yearmonth"
+    tags:
+    - reference
+    - standard
+    - exclusivemaximum
+    keywords:
+    - exclusiveMaximum
+    - Type
+    - integer
+    - number
+    - date
+    - time
+    - datetime
+    - duration
+    - year
+    - yearmonth
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 842
+    - 870
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#jsonSchema
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: jsonSchema
+    title: jsonSchema
+    summary: "- **Type**: object - **Fields**: array, object"
+    tags:
+    - reference
+    - standard
+    - jsonschema
+    keywords:
+    - jsonSchema
+    - Type
+    - object
+    - Fields
+    - array
+    - valid
+    - JSON
+    - Schema
+    - validate
+    - field
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 871
+    - 910
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#pattern
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: pattern
+    title: pattern
+    summary: "- **Type**: string - **Fields**: string"
+    tags:
+    - reference
+    - standard
+    - pattern
+    keywords:
+    - pattern
+    - Type
+    - string
+    - Fields
+    - regular
+    - expression
+    - can
+    - used
+    - test
+    - field
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 911
+    - 938
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#enum
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: enum
+    title: enum
+    summary: "- **Type**: array - **Fields**: all"
+    tags:
+    - reference
+    - standard
+    - enum
+    keywords:
+    - enum
+    - Type
+    - array
+    - Fields
+    - all
+    - value
+    - field
+    - MUST
+    - exactly
+    - match
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 3
+    line_range:
+    - 939
+    - 974
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
+  - id: datapackage:standard/table-schema.mdx#related-work
+    parent: datapackage:standard/table-schema.mdx
+    tier: section
+    source: datapackage
+    path: standard/table-schema.mdx
+    anchor: related-work
+    title: Related Work
+    summary: 'Table Schema draws content and/or inspiration from, among others, the following
+      specifications and implementations:'
+    tags:
+    - reference
+    - standard
+    - related
+    - work
+    keywords:
+    - Related
+    - Work
+    - Table
+    - Schema
+    - draws
+    - content
+    - inspiration
+    - among
+    - others
+    - following
+    concepts: [table-schema, datapackage-v2]
+    category: reference
+    content_type: markdown
+    heading_level: 2
+    line_range:
+    - 975
+    - 984
+    stale: false
+    stale_since: null
+    last_indexed: '2026-08-19T11:16:25Z'
 meta:
-  generated_at: "2026-07-05T00:00:00Z"
-  entry_count: 129
+  generated_at: "2026-08-19T11:16:25Z"
+  entry_count: 293

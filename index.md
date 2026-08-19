@@ -1,6 +1,6 @@
 # Frictionless Framework Documentation Index
 
-> Sources: 2 | Entries: 129 | Generated: 2026-07-05T00:00:00Z
+> Sources: 2 | Entries: 293 | Generated: 2026-08-19T11:16:25Z
 > Generated from `index.yaml` — do not edit directly
 
 ---
@@ -23,27 +23,67 @@
 
 ## guide
 
+- **Benefits of Adoption** `datapackage:overview/introduction.md#benefits-of-adoption` - By adhering to the Data Package Standard, you can unlock several significant advantages in your data management processes:
 - **Caching of Resources** `datapackage:recipes/caching-of-resources.md` - Pattern for implementing resource caching allowing applications to maintain local copies of remote resources as fallback locations.
+- **Co-located translation sources** `datapackage:recipes/translation-support.md#co-located-translation-sources` - **Uses a file storage convention for accessing translations**.
+- **Columns** `datapackage:guides/csvw-data-package.md#columns` - | CSVW property | Data Package support | Details | | ---- | ---- | ---- | | name | Yes | As field.name | | suppressOutput | No | | | titles | Partial | As field.title (a single value) | | virtual | No | | | @id | Custom property | | | @type…
 - **Comparison with CSVW** `datapackage:guides/csvw-data-package.md` - Comparative analysis between Data Package and W3C CSVW standards examining scope, maintenance, adoption, extensibility, and property mapping.
 - **Comparison with MediaWiki Tabular Data** `datapackage:guides/mediawiki-tabular-data.md` - Comparative analysis between Data Package and MediaWiki Tabular Data specification examining property differences and schema variations.
 - **Compression of Resources** `datapackage:recipes/compression-of-resources.md` - Pattern for applying compression to data resources to reduce storage and bandwidth costs while improving download performance.
+- **Context** `datapackage:recipes/relationship-between-fields.md#context` - This subject was studied and treated for databases and led to the definition of a methodology for specifying relationships and to the implementation of consistent relational databases.
 - **Data Catalog** `datapackage:recipes/data-catalog.md` - Pattern for describing collections of data packages in catalogs or registries where each dataset is represented as a resource.
 - **Data Dependencies** `datapackage:recipes/data-dependencies.md` - Pattern for specifying dependencies between data packages enabling version management and package installation chains.
 - **Data Package Version** `datapackage:recipes/data-package-version.md` - Pattern establishing semantic versioning conventions for Data Packages defining how to increment versions based on changes to structure and content.
+- **Data Types** `datapackage:guides/csvw-data-package.md#data-types` - CSVW defines data types as built-in data types and derived data types. A derived data type extends a built-in data type with formats, constraints, etc. Data Package does not make that distinction, but rather defines a number of Field Types.…
+- **Data Types** `datapackage:guides/mediawiki-tabular-data.md#data-types` - Tabular Data supports four data types that overlap with Table Schema data types:
 - **Describing Data** `frictionless-py:guides/describing-data.md` - Comprehensive guide to creating and managing metadata for data files using Frictionless, covering schemas, resources, packages, and metadata best practices.
 - **Design Principles** `frictionless-py:advanced/design.md` - Overview of Frictionless Framework design principles and architecture.
+- **Dialect Descriptions** `datapackage:guides/csvw-data-package.md#dialect-descriptions` - :::note Data Package Table Dialect was used as inspiration for CSVW dialect. It has features that CSVW dialect does not, since it covers tabular data formats beyond delimited text files, such as spreadsheets and databases. For delimited tex…
+- **Example** `datapackage:recipes/files-inside-archives.md#example` - "{ ""profile"": ""data-package"", ""resources"": [ { ""path"": ""https://zenodo.org/record/3247384/files/Sea-Bird_Processed_Data.zip"", ""format"": ""zip"", ""mediatype"": ""application/zip"", ""bytes"": ""294294242424"", ""hash"": ""a27063c614c183b502e5c03bd9c8931b…"
+- **Example schema** `datapackage:recipes/metadata-in-table-schema.md#example-schema` - "{ ""$schema"": ""https://specs.frictionlessdata.io/schemas/table-schema.json"", ""name"": ""irve"", ""title"": ""Infrastructures de recharge de véhicules électriques"", ""description"": ""Spécification du fichier d'échange relatif aux données concernant l…"
+- **Examples** `datapackage:recipes/data-catalog.md#examples` - A generic package catalog:
+- **Examples** `datapackage:recipes/json-data-resources.md#examples` - A minimal JSON Data Resource, referencing external JSON documents, looks as follows.
 - **Extending Frictionless** `frictionless-py:advanced/extending.md` - Guide to extending Frictionless Framework with custom checks, steps, and plugins.
 - **External Foreign Keys** `datapackage:recipes/external-foreign-keys.md` - Pattern for linking field values in one data package to values in fields of a different data package using foreign key references.
 - **Extracting Data** `frictionless-py:guides/extracting-data.md` - Tutorial on extracting data from various formats and sources using Frictionless, including handling different data structures and formats.
 - **Files Inside Archives** `datapackage:recipes/files-inside-archives.md` - Pattern for including archive files (ZIP, tar) containing multiple files as data resources within data packages.
 - **How to extend Data Package** `datapackage:guides/extending-data-package.md` - Guide on extending the Data Package standard with domain-specific customizations and additional metadata requirements.
+- **Implementations** `datapackage:recipes/metadata-in-table-schema.md#implementations` - The following links are actual examples already using this pattern, but not 100 % aligned with our proposal. The point is to make the Table Schema users converge towards a common pattern, before considering changing the spec.
+- **Implementations** `datapackage:recipes/relationship-between-fields.md#implementations` - The implementation of a new descriptor is not discussed here (no particular point to address).
+- **Inherited Properties** `datapackage:guides/csvw-data-package.md#inherited-properties` - Data Package properties do not inherit from their parent, unless otherwise specified (e.g. resource.sources). The properties listed below only exist at one level in Data Package, except for missingValues.
+- **Inline** `datapackage:recipes/translation-support.md#inline` - **Uses a column naming convention for accessing translations**.
 - **Introduction** `datapackage:overview/introduction.md` - Comprehensive introduction to the Data Package Standard covering its role as a solution for data management, key principles of simplicity and flexibility, and benefits for data practitioners.
 - **JSON Data Resources** `datapackage:recipes/json-data-resources.md` - Pattern extending Data Resource specification for describing structured JSON data with JSON Schema validation support.
+- **Key Principles** `datapackage:overview/introduction.md#key-principles` - At its core, the Data Package Standard is built upon a set of key principles that underpin its design and functionality:
 - **Language Support** `datapackage:recipes/language-support.md` - Pattern for declaring language configuration in descriptors and data specifying default language and additional supported languages.
 - **Metadata in Table Schema** `datapackage:recipes/metadata-in-table-schema.md` - Pattern for including metadata properties in Table Schema descriptors enabling standalone schema documentation and cataloging.
+- **Principles** `datapackage:recipes/relationship-between-fields.md#principles` - Two aspects need to be addressed:
 - **Private Properties** `datapackage:recipes/private-properties.md` - Pattern for storing system-generated metadata on descriptors using underscore-prefixed property names to distinguish from user-generated data.
+- **Property Comparison** `datapackage:guides/csvw-data-package.md#property-comparison` - Below is a list of all properties defined in CSVW’s Metadata Vocabulary for Tabular Data (version 20151217) and how these are supported in Data Package (v2.0).
+- **Property Comparison** `datapackage:guides/mediawiki-tabular-data.md#property-comparison` - A MediaWiki tabular data page describes and contains an individual table of data similar to a Data Resource with inline tabular data. Both are serialized as JSON objects, but the former comes as a page with unique name in a MediaWiki instan…
+- **Property Syntax** `datapackage:guides/csvw-data-package.md#property-syntax` - | CSVW property | Data Package support | Details | | ---- | ---- | ---- | | Array properties | Yes | | | Link properties | Partial | URLs and paths are supported, but not with a @base URL in @context | | URI template properties | No | | | C…
+- **Proposed extensions** `datapackage:recipes/relationship-between-fields.md#proposed-extensions` - A relationship is defined by the following information:
 - **Relationship between Fields** `datapackage:recipes/relationship-between-fields.md` - Pattern for expressing structural dependencies and constraints between fields in tabular datasets using entity-relationship model concepts.
+- **Scenarios** `datapackage:recipes/data-package-version.md#scenarios` - - You are developing your data though public consultation. Start your initial data release at 0.1.0 - You release your data for the first time. Use version 1.0.0 - You append last months data to an existing release. Increment the MINOR vers…
+- **Schema Properties** `datapackage:guides/mediawiki-tabular-data.md#schema-properties` - The schema property of MediaWiki tabular contains an object with property fields just like Table Schema but no other properties are allowed. Elements of this array are like Table Schema field descriptors limited to three properties and diff…
+- **Schemas** `datapackage:guides/csvw-data-package.md#schemas` - :::note Data Package Table Schema has features that CSVW schema does not, including fieldMatch for matching a schema with data, missingValues for multiple (and labelled) missing values, and uniqueKeys. :::
+- **Specification** `datapackage:recipes/caching-of-resources.md#specification` - Implementations MAY handle a _cache property on any descriptor that supports either a path or data property. In the case that the data referenced in path or data is unavailable, _cache should be used as a fallback to access the data. The ha…
+- **Specification** `datapackage:recipes/compression-of-resources.md#specification` - All compressed resources MUST have a path that allows the compression property to be inferred. If the compression can't be inferred from the path property (e.g. a custom file extension is used) then the compression property MUST be used to…
+- **Specification** `datapackage:recipes/data-catalog.md#specification` - The Data Package Catalog builds directly on the Data Package specification. Thus a Data Package Catalog MUST be a Data Package and conform to the [Data Package specification][dp].
+- **Specification** `datapackage:recipes/data-dependencies.md#specification` - dataDependencies is an object. It follows same format as CommonJS Packages spec v1.1. Each dependency defines the lowest compatible MAJOR[.MINOR[.PATCH]] dependency versions (only one per MAJOR version) with which the package has been teste…
+- **Specification** `datapackage:recipes/data-package-version.md#specification` - The Data Package version format follows the Semantic Versioning specification format: MAJOR.MINOR.PATCH
+- **Specification** `datapackage:recipes/external-foreign-keys.md#specification` - The foreignKeys array MAY have a property package. This property MUST be, either:
+- **Specification** `datapackage:recipes/json-data-resources.md#specification` - A JSON Data Resource MUST be a [Data Resource][dr], that is it MUST conform to the [Data Resource specification][dr].
+- **Specification** `datapackage:recipes/language-support.md#specification` - Any Frictionless Data descriptor can declare the language configuration of its metadata and data with the languages array.
+- **Specification** `datapackage:recipes/metadata-in-table-schema.md#specification` - This pattern introduces the following properties to the Table Schema spec (using the Frictionless Data core dictionary as much as possible):
+- **Specification** `datapackage:recipes/private-properties.md#specification` - "On any Frictionless Data descriptor, data that is not generated by the author/contributors, but is generated by software/a system handling the data, SHOULD be considered as ""private"", and be prefixed by an underscore _."
+- **Specification** `datapackage:recipes/relationship-between-fields.md#specification` - Assuming solution 3 (table descriptor), the specification could be as follows:
+- **Specification** `datapackage:recipes/translation-support.md#specification` - Specification section in Translation Support.
 - **System Overview** `frictionless-py:advanced/system.md` - Comprehensive overview of Frictionless Framework system components and interactions.
+- **Table Groups** `datapackage:guides/csvw-data-package.md#table-groups` - :::note Data Package can define more than groups of tables. A package can be a set of resources of any type. Data Resource therefore supports features that CSVW does not, such as format, mediatype, and hash. :::
+- **Tables** `datapackage:guides/csvw-data-package.md#tables` - | CSVW property | Data Package support | Details | | ---- | ---- | ---- | | url | Yes | As resource.path | | dialect | Yes | As resource.dialect | | notes | Custom property | | | suppressOutput | No | | | tableDirection | No | | | tableSche…
+- **The Project** `datapackage:overview/introduction.md#the-project` - The Data Package Standard emerges as a solution to these challenges, offering a structured and versatile framework for organizing, documenting, and distributing data. Whether you are a data scientist, researcher, data engineer, or data stew…
+- **Top-level Properties** `datapackage:guides/mediawiki-tabular-data.md#top-level-properties` - MediaWiki Tabular Data has three required and two optional top-level properties. Most of these properties map to corresponding properties of a Data Resource:
 - **Transforming Data** `frictionless-py:guides/transforming-data.md` - Guide to transforming and processing tabular data using Frictionless, including filtering, reformatting, and applying custom transformations.
 - **Translation Support** `datapackage:recipes/translation-support.md` - Pattern for supporting translations in both metadata descriptors and source data using inline field naming conventions and co-located translation sources.
 - **Validating Data** `frictionless-py:guides/validating-data.md` - Complete guide to data validation in Frictionless, showing how to identify and fix data problems using validation functions and checks.
@@ -53,6 +93,11 @@
 - **Changelog** `datapackage:overview/changelog.md` - Detailed changelog documenting all meaningful changes made to the Data Package standard from v2.0 to v1.0, including specification improvements and feature updates.
 - **Data Package (v2) is released!** `datapackage:blog/2024-06-26-v2-release.md` - Release announcement for Data Package v2.0 describing new features, governance model, working group contributions, and next steps for adoption.
 - **Data Package (v2) work started** `datapackage:blog/2023-11-15-v2-announcement.md` - Announcement of the kickoff of Data Package v2 development with NLnet support, introducing the working group and roadmap for the update.
+- **Decision-making** `datapackage:blog/2023-11-15-v2-announcement.md#decision-making` - For every GitHub issue on the specs submitted by the community throughout the years, the Frictionless core team or any working group member will propose a recommended action to the working group. The action proposed will be **accepted if co…
+- **Diversity** `datapackage:blog/2023-11-15-v2-announcement.md#diversity` - Leveraging diversity is an opportunity that we must embrace for the benefits it brings. Extensive research consistently demonstrates that diverse participation leads to better outcomes and more resilient technologies — diverse communities a…
+- **So what is new in version 2?** `datapackage:blog/2024-06-26-v2-release.md#so-what-is-new-in-version-2` - During these months we have been working on the core specifications that compose the Standard, namely: Data Package – a simple container format for describing a coherent collection of data in a single ‘package’, Data Resource to describe an…
+- **package.contributors (updated)** `datapackage:overview/changelog.md#package-contributors-updated` - contributors was updated:
+- **v2.0** `datapackage:overview/changelog.md#v2-0` - This release includes a rich set of specification improvements to make Data Package a finished product (see announcement). All changes were reviewed and accepted by the Data Package Working Group.
 
 ## navigation
 
@@ -60,6 +105,8 @@
 
 ## reference
 
+- **$schema** `datapackage:standard/data-package.mdx#dollar-schema` - A root level Data Package descriptor MAY have a $schema property that MUST be a profile as per Profile definition that MUST include all the metadata constraints required by this specification.
+- **$schema** `datapackage:standard/data-resource.mdx#dollar-schema` - A root level Data Resource descriptor MAY have a $schema property that MUST be a profile as per Profile definition that MUST include all the metadata constraints required by this specification.
 - **AWS Scheme** `frictionless-py:schemes/aws.md` - Reference for accessing data from Amazon S3 storage in Frictionless.
 - **Adoption** `datapackage:overview/adoption.mdx` - Showcase of Data Package adoption across diverse organizations including data portals, pilot projects, and community implementations demonstrating real-world use cases.
 - **Any Field** `frictionless-py:fields/any.md` - Reference for the Any field type, a generic field type that accepts any value without type constraints.
@@ -73,85 +120,202 @@
 - **Cell Checks** `frictionless-py:checks/cell.md` - Reference for cell-level validation checks in Frictionless.
 - **Cell Errors** `frictionless-py:errors/cell.md` - Reference documentation for cell-level validation errors including type mismatches and constraint violations.
 - **Cell Steps** `frictionless-py:steps/cell.md` - Reference for cell-level transformation steps for modifying individual cell values.
+- **Community Projects** `datapackage:overview/adoption.mdx#community-projects` - Here is a list of projects that our community has created on top of Data Package. If you would like your project to be featured here, let us know!
 - **Console Overview** `frictionless-py:console/overview.md` - Introduction to Frictionless command-line interface tools and general usage patterns for CLI commands.
 - **Convert Command** `frictionless-py:console/convert.md` - CLI reference for the convert command to transform and convert data between different formats and structures.
+- **Custom Properties** `datapackage:standard/glossary.mdx#custom-properties` - The Data Package specifications define a set of standard properties to be used and allows custom properties to be added. It is RECOMMENDED to use namespace:property naming convention for custom properties. It is RECOMMENDED to use lower cam…
+- **Dangerous Descriptor/Resource pointer combinations** `datapackage:standard/security.mdx#dangerous-descriptor-resource-pointer-combinations` - "How to read the table: if your ""datapackage.json""-file comes from one of the sources on the left, you should treat Resources in the format on the top as:"
 - **Data Errors** `frictionless-py:errors/data.md` - Reference documentation for data-level validation errors in tabular files.
 - **Data Package Specification** `datapackage:standard/data-package.mdx` - Formal specification of the Data Package standard defining the container format, descriptor structure, and metadata requirements for describing coherent collections of data. ⚡ GREP - `grep -n '^## ' FILE -A 20`
+- **Data Portals** `datapackage:overview/adoption.mdx#data-portals` - Data portals adopting Data Package standard to increase accessibility of published data:
+- **Data Representation** `datapackage:standard/glossary.mdx#data-representation` - In order to talk about the representation and processing of tabular data from text-based sources, it is useful to introduce the concepts of the _physical_ and the _logical_ representation of data.
 - **Data Resource Specification** `datapackage:standard/data-resource.mdx` - Specification for describing individual data resources including files or datasets, covering locators, metadata properties, and format information. ⚡ GREP - `grep -n '^## ' FILE -A 20`
 - **Date Field** `frictionless-py:fields/date.md` - Reference for the Date field type with date format specifications.
 - **Datetime Field** `frictionless-py:fields/datetime.md` - Reference for the Datetime field type combining date and time values.
+- **Definitions** `datapackage:standard/glossary.mdx#definitions` - Definitions section in Glossary.
+- **Delimited** `datapackage:standard/table-dialect.mdx#delimited` - Delimited formats is a group of textual formats such as CSV and TSV. Their charactistics can be expressed the following properties:
 - **Describe Command** `frictionless-py:console/describe.md` - CLI reference for the describe command used to generate metadata descriptors from data files.
+- **Descriptor** `datapackage:standard/data-package.mdx#descriptor` - Data Package descriptor MUST be a descriptor as per Descriptor definition. A list of standard properties that can be included into a descriptor is defined in the Properties section.
+- **Descriptor** `datapackage:standard/data-resource.mdx#descriptor` - Data Resource descriptor MUST be a descriptor as per Descriptor definition. A list of standard properties that can be included into a descriptor is defined in the Properties section.
+- **Descriptor** `datapackage:standard/extensions.mdx#descriptor` - Consider that the profile above is published at https://spatial.datapackage.org/profiles/1.0/datapackage.json. In this case, a Data Package descriptor compatible to exemplar Spatial Data Package (v1) will look as below:
+- **Descriptor** `datapackage:standard/glossary.mdx#descriptor` - The Data Package Standard uses a concept of a descriptor to represent metadata defined according to the core specefications such as Data Package or Table Schema.
+- **Descriptor** `datapackage:standard/table-dialect.mdx#descriptor` - Table Dialect descriptor MUST be a descriptor as per Descriptor definition. A list of standard properties that can be included into a descriptor is defined in the Properties section.
+- **Descriptor** `datapackage:standard/table-schema.mdx#descriptor` - Table Schema descriptor MUST be a descriptor as per Descriptor definition. A list of standard properties that can be included into a descriptor is defined in the Properties section.
+- **Descriptor source is a JSON object** `datapackage:standard/security.mdx#descriptor-source-is-a-json-object` - If the Descriptor is not loaded from file but created in-memory and the source of the Data Package is not fully trusted, you SHOULD NOT allow Data Packages with Resource pointers in
+- **Descriptor source is a local relative path** `datapackage:standard/security.mdx#descriptor-source-is-a-local-relative-path` - If your descriptor is loaded via a local relative path, and the source of the Data Package is not fully trusted, you SHOULD NOT allow Data Packages with Resource pointers in
 - **Duration Field** `frictionless-py:fields/duration.md` - Reference for the Duration field type for time duration values.
 - **ERD Format** `frictionless-py:formats/erd.md` - Reference for working with Entity-Relationship Diagram format in Frictionless.
+- **Example** `datapackage:standard/extensions.mdx#example` - For example, we will create a Spatial Data Package that requires a geopoint marker to be provided for each resource consisting a Data Package.
 - **Excel Format** `frictionless-py:formats/excel.md` - Reference for reading, writing, and configuring Excel/XLSX file format in Frictionless.
 - **Explore Command** `frictionless-py:console/explore.md` - CLI reference for the explore command to interactively browse and analyze data files.
+- **Extension** `datapackage:standard/extensions.mdx#extension` - The Data Package Standard has a simple yet powerful extension mechanism based on the Profile concept. An extension is, generally speaking, a project that provides one or more domain-specific profiles to the Data Package Standard specificati…
 - **Extensions** `datapackage:standard/extensions.mdx` - Documentation of the Data Package extensibility mechanism allowing domain-specific extensions through JSON Schema profiles for specialized metadata requirements.
 - **Extract Command** `frictionless-py:console/extract.md` - CLI reference for the extract command to read and output tabular data from various file formats.
+- **Field** `datapackage:standard/table-schema.mdx#field` - A field descriptor MUST be a JSON object that describes a single field. The descriptor provides additional human-readable documentation for a field, as well as additional information that can be used to validate the field or create a user i…
+- **Field Constraints** `datapackage:standard/table-schema.mdx#field-constraints` - The constraints property on Table Schema Fields can be used by consumers to list constraints for validating field values. For example, validating the data in a Tabular Data Resource against its Table Schema; or as a means to validate data b…
 - **Field Steps** `frictionless-py:steps/field.md` - Reference for field-level transformation steps for manipulating columns and fields.
+- **Field Types** `datapackage:standard/table-schema.mdx#field-types` - The type list with associated formats and other related properties is as follows.
 - **File Errors** `frictionless-py:errors/file.md` - Reference documentation for file-level errors including missing files and read access issues.
 - **File Resource** `frictionless-py:resources/file.md` - Reference for the File resource type in Frictionless.
 - **Fiscal Data Package** `datapackage:extensions/fiscal-data-package.md` - Reference to Fiscal Data Package, a lightweight domain-specific extension for publishing and consuming government budget and fiscal data.
+- **General** `datapackage:standard/data-resource.mdx#general` - The properties below are applicable to any Data Resource.
 - **Geojson Field** `frictionless-py:fields/geojson.md` - Reference for the Geojson field type for GeoJSON geographic objects.
 - **Geopoint Field** `frictionless-py:fields/geopoint.md` - Reference for the Geopoint field type for geographic point coordinates.
 - **GitHub Portal** `frictionless-py:portals/github.md` - Reference for publishing and managing Frictionless data packages on GitHub.
 - **Glossary** `datapackage:standard/glossary.mdx` - Comprehensive glossary defining key terms and concepts used throughout the Data Package standard including profile, descriptor, and custom properties.
+- **Go** `datapackage:overview/software.mdx#go` - Go section in Software.
 - **Google Sheets Format** `frictionless-py:formats/gsheets.md` - Reference for reading and writing data from Google Sheets in Frictionless.
 - **HTML Format** `frictionless-py:formats/html.md` - Reference for extracting tabular data from HTML tables in Frictionless.
 - **Header Errors** `frictionless-py:errors/header.md` - Reference documentation for header-level validation errors including malformed headers and duplicates.
+- **Implemention Perspective** `datapackage:standard/security.mdx#implemention-perspective` - Two kinds of Resource pointers can never be guaranteed to be totally safe:
 - **Index Command** `frictionless-py:console/index.md` - CLI reference for the index command to create indexing structures for efficient data access.
+- **Inline Data** `datapackage:standard/data-resource.mdx#inline-data` - Resource data rather than being stored in external files can be shipped inline on a Resource using the data property.
 - **Inline Format** `frictionless-py:formats/inline.md` - Reference for working with inline tabular data structures in Frictionless.
 - **Integer Field** `frictionless-py:fields/integer.md` - Reference for the Integer field type in Frictionless schemas.
+- **Introduction** `datapackage:standard/data-package.mdx#introduction` - A Data Package consists of:
+- **Introduction** `datapackage:standard/table-dialect.mdx#introduction` - Table Dialect defines set of properties that can be used by data producers and data consumers to ensure data interoperability in various Tabular Data formats such as CSV, JSON, or Excel. The main goal of this specification is to define a co…
 - **JSON Format** `frictionless-py:formats/json.md` - Reference for reading, writing, and configuring JSON data format in Frictionless.
 - **JSON Resource** `frictionless-py:resources/json.md` - Reference for the JSON resource type in Frictionless.
 - **JSON Schema Format** `frictionless-py:formats/jsonschema.md` - Reference for working with JSON Schema format in Frictionless for schema definition and validation.
+- **Java** `datapackage:overview/software.mdx#java` - Java section in Software.
+- **JavaScript** `datapackage:overview/software.mdx#javascript` - JavaScript section in Software.
+- **Julia** `datapackage:overview/software.mdx#julia` - Julia section in Software.
 - **Label Errors** `frictionless-py:errors/label.md` - Reference documentation for label/column name validation errors.
 - **List Command** `frictionless-py:console/list.md` - CLI reference for the list command to list available data resources and their contents.
 - **Local Scheme** `frictionless-py:schemes/local.md` - Reference for accessing local file system data in Frictionless.
 - **Markdown Format** `frictionless-py:formats/markdown.md` - Reference for reading and writing tabular data in Markdown format.
 - **Metadata Errors** `frictionless-py:errors/metadata.md` - Reference documentation for metadata validation errors in descriptors and schemas.
 - **Multipart Scheme** `frictionless-py:schemes/multipart.md` - Reference for reading data from multiple concatenated files.
+- **Multiple Files** `datapackage:standard/data-resource.mdx#multiple-files` - Usually, a resource will have only a single file associated to it. However, sometimes it can be convenient to have a single resource whose data is split across multiple files -- perhaps the data is large and having it in one file would be i…
 - **Number Field** `frictionless-py:fields/number.md` - Reference for the Number field type supporting floating-point and decimal values.
 - **ODS Format** `frictionless-py:formats/ods.md` - Reference for reading and writing OpenDocument Spreadsheet (ODS) format in Frictionless.
 - **Object Field** `frictionless-py:fields/object.md` - Reference for the Object field type for structured key-value data.
+- **PHP** `datapackage:overview/software.mdx#php` - PHP section in Software.
 - **Pandas Format** `frictionless-py:formats/pandas.md` - Reference for converting between Frictionless Resources and Pandas DataFrames.
 - **Parquet Format** `frictionless-py:formats/parquet.md` - Reference for reading and writing Apache Parquet columnar data format in Frictionless.
+- **Pilot Projects** `datapackage:overview/adoption.mdx#pilot-projects` - We work closely with data researchers and institutions to help them integrate Frictionless into their workflow. Click on individual Pilots to learn more.
+- **Profile** `datapackage:standard/extensions.mdx#profile` - First of all, we need to create a Data Package profile. Note that it includes a default data package profile as per the specification requirement:
+- **Profile** `datapackage:standard/glossary.mdx#profile` - A profile is a URL that MUST:
+- **Properties** `datapackage:standard/data-package.mdx#properties` - A Data Package descriptor MUST have resources property and SHOULD have name, id, licenses, and profile properties.
+- **Properties** `datapackage:standard/data-resource.mdx#properties` - Standard properties of the descriptor are described below. A descriptor MAY include any number of properties in additional to those described below as required and optional properties.
+- **Properties** `datapackage:standard/table-dialect.mdx#properties` - Properties section in Table Dialect Specification.
+- **Properties** `datapackage:standard/table-schema.mdx#properties` - Properties section in Table Schema Specification.
 - **Publish Command** `frictionless-py:console/publish.md` - CLI reference for the publish command to publish data and metadata to remote repositories and data portals.
+- **Python** `datapackage:overview/software.mdx#python` - Python section in Software.
 - **Query Command** `frictionless-py:console/query.md` - CLI reference for the query command to execute SQL-like queries against tabular data.
+- **R** `datapackage:overview/software.mdx#r` - R section in Software.
+- **Related Work** `datapackage:standard/data-package.mdx#related-work` - Data Package draws content and/or inspiration from, among others, the following specifications and implementations:
+- **Related Work** `datapackage:standard/table-schema.mdx#related-work` - Table Schema draws content and/or inspiration from, among others, the following specifications and implementations:
 - **Remote Scheme** `frictionless-py:schemes/remote.md` - Reference for accessing remote HTTP/HTTPS data sources in Frictionless.
 - **Resource Errors** `frictionless-py:errors/resource.md` - Reference documentation for resource-level validation errors.
 - **Resource Steps** `frictionless-py:steps/resource.md` - Reference for resource-level transformation steps used in data pipelines.
 - **Row Checks** `frictionless-py:checks/row.md` - Reference for row-level validation checks and constraints.
 - **Row Errors** `frictionless-py:errors/row.md` - Reference documentation for row-level validation errors including missing headers and row constraint violations.
 - **Row Steps** `frictionless-py:steps/row.md` - Reference for row-level transformation steps including filtering, searching, and slicing.
+- **Ruby** `datapackage:overview/software.mdx#ruby` - Ruby section in Software.
 - **SPSS Format** `frictionless-py:formats/spss.md` - Reference for reading SPSS data files in Frictionless.
 - **SQL Format** `frictionless-py:formats/sql.md` - Reference for reading and writing data from SQL databases in Frictionless.
+- **Schema** `datapackage:standard/table-schema.mdx#schema` - A Table Schema descriptor MAY contain these standard properties:
 - **Script Command** `frictionless-py:console/script.md` - CLI reference for the script command to execute Python scripts for data processing and analysis.
 - **Security** `datapackage:standard/security.mdx` - Security considerations for working with Data Packages covering resource pointer types, descriptor sources, and attack prevention strategies.
 - **Software** `datapackage:overview/software.mdx` - Comprehensive overview of software tools and libraries supporting the Data Package standard across multiple programming languages and platforms.
+- **Spreadsheet** `datapackage:standard/table-dialect.mdx#spreadsheet` - Spreadsheet formats is a group of sheet-based formats such as Excel or ODS. Their charactistics can be expressed the following properties:
 - **Stream Scheme** `frictionless-py:schemes/stream.md` - Reference for reading data from stream inputs in Frictionless.
 - **String Field** `frictionless-py:fields/string.md` - Reference for the String field type with supported formats including URI, email, UUID, and binary.
+- **Structure** `datapackage:standard/data-package.mdx#structure` - A minimal data package on disk would be a directory containing a single file:
+- **Structured** `datapackage:standard/table-dialect.mdx#structured` - Structured formats is a group of structured or semi-structured formats such as JSON and YAML. Their charactistics can be expressed the following properties:
+- **Swift** `datapackage:overview/software.mdx#swift` - Swift section in Software.
 - **Table Checks** `frictionless-py:checks/table.md` - Reference for table-level validation checks.
 - **Table Dialect Specification** `datapackage:standard/table-dialect.mdx` - Specification describing how tabular data is stored in files, supporting delimited text formats like CSV, semi-structured formats like JSON, and spreadsheets. ⚡ GREP - `grep -n '^## ' FILE -A 20`
 - **Table Errors** `frictionless-py:errors/table.md` - Reference documentation for table-level validation errors.
 - **Table Resource** `frictionless-py:resources/table.md` - Reference for the Table resource type for tabular data in Frictionless.
 - **Table Schema Specification** `datapackage:standard/table-schema.mdx` - Language-agnostic specification for declaring schemas describing tabular data structure, field types, constraints, and validation rules. ⚡ GREP - `grep -n '^## ' FILE -A 20`
 - **Table Steps** `frictionless-py:steps/table.md` - Reference for table-level transformation steps including normalization and restructuring.
+- **Tabular** `datapackage:standard/data-resource.mdx#tabular` - The properties below are applicable to any Tabular Data Resource.
+- **Tabular Data** `datapackage:standard/glossary.mdx#tabular-data` - Tabular data consists of a set of rows. Each row has a set of fields (columns). We usually expect that each row has the same set of fields and thus we can talk about _the_ fields for the table as a whole.
+- **Tabular Data Formats** `datapackage:standard/table-dialect.mdx#tabular-data-formats` - Table Dialect can be used for different data formats, such as delimited text files, semi-structured formats and spreadsheets. Some properties are generic and can be used for multiple formats, while others are specific to one format.
 - **Text Resource** `frictionless-py:resources/text.md` - Reference for the Text resource type in Frictionless.
 - **Time Field** `frictionless-py:fields/time.md` - Reference for the Time field type for time-of-day values.
+- **TypeScript** `datapackage:overview/software.mdx#typescript` - TypeScript section in Software.
+- **URL or Path** `datapackage:standard/glossary.mdx#url-or-path` - A URL or Path is a string with the following additional constraints:
 - **Universe** `frictionless-py:universe.md` - Collection of Jupyter notebooks and tutorials for Frictionless Framework covering use cases like data shaping, biology workflows, and research data management.
+- **Usage Perspective** `datapackage:standard/security.mdx#usage-perspective` - Data packages is a container format that allows the creator to specify payload data (Resources) either as JSON objects/arrays or via pointers. There are two pointer formats:
 - **Validate Command** `frictionless-py:console/validate.md` - CLI reference for the validate command to check data files for errors and data quality issues.
+- **Visual** `datapackage:overview/software.mdx#visual` - "No-code application to explore and publish all kinds of data: datasets, tables, charts, maps, stories, and more. Forever free and open source project powered by open standards and generative AI."" href=""https://opendataeditor.okfn.org"" />"
 - **YAML Format** `frictionless-py:formats/yaml.md` - Reference for reading and writing YAML data format in Frictionless.
 - **Year Field** `frictionless-py:fields/year.md` - Reference for the Year field type for year values.
 - **Year Month Field** `frictionless-py:fields/yearmonth.md` - Reference for the Year-Month field type for year-month combinations.
 - **ZIP Format** `frictionless-py:formats/zip.md` - Reference for reading data from ZIP archive files in Frictionless.
 - **Zenodo Portal** `frictionless-py:portals/zenodo.md` - Reference for publishing data packages to Zenodo repository.
+- **any** `datapackage:standard/table-schema.mdx#any` - The field contains values of a unspecified or mixed type. A data consumer MUST NOT perform any processing on this field's values and MUST interpret them as it is in the data source. This data type is directly modelled on the concept of the…
+- **boolean** `datapackage:standard/table-schema.mdx#boolean` - The field contains boolean (true/false) data.
+- **categories** `datapackage:standard/table-schema.mdx#categories` - string and integer field types MAY include a categories property to restrict the field to a finite set of possible values (similar to an enum constraint) and indicate that the field MAY be loaded as a categorical data type if supported by t…
+- **categoriesOrdered** `datapackage:standard/table-schema.mdx#categoriesOrdered` - When the categories property is defined, it MAY be accompanied by a categoriesOrdered property in the field definition. When present, the categoriesOrdered property MUST be boolean. When categoriesOrdered is true, implementations SHOULD reg…
+- **commentChar** `datapackage:standard/table-dialect.mdx#commentChar` - A Table Dialect descriptor MAY have the commentChar property that MUST be a string of one or more characters; undefined by default. This property specifies what rows have to be omitted from the data based on the row's first characters.
+- **commentRows** `datapackage:standard/table-dialect.mdx#commentRows` - A Table Dialect descriptor MAY have the commentRows property that MUST be an array of positive integers starting from 1; undefined by default. This property specifies what rows have to be omitted from the data.
+- **contributors** `datapackage:standard/data-package.mdx#contributors` - The people or organizations who contributed to this Data Package. It MUST be an array. Each entry is a Contributor and MUST be an object. A Contributor MUST have at least one property. A Contributor is RECOMMENDED to have title property and…
+- **created** `datapackage:standard/data-package.mdx#created` - The datetime on which this was created.
+- **date** `datapackage:standard/table-schema.mdx#date` - The field contains a date without a time.
+- **datetime** `datapackage:standard/table-schema.mdx#datetime` - The field contains a date with a time.
+- **delimiter** `datapackage:standard/table-dialect.mdx#delimiter` - A Table Dialect descriptor MAY have the delimiter property that MUST be a string; with default value , (comma). This property specifies the character sequence which separates fields in the data file.
+- **dialect** `datapackage:standard/data-resource.mdx#dialect` - A Tabular Data Resource MAY have a dialect property to describe a tabular dialect of the resource data. If provided, the dialect property MUST be a Table Dialect descriptor in a form of an object or URL-or-Path.
+- **doubleQuote** `datapackage:standard/table-dialect.mdx#doubleQuote` - A Table Dialect descriptor MAY have the doubleQuote property that MUST be boolean with default value true. This property controls the handling of quoteChar inside data cells. If true, two consecutive quotes are interpreted as one.
+- **enum** `datapackage:standard/table-schema.mdx#enum` - - **Type**: array - **Fields**: all
+- **escapeChar** `datapackage:standard/table-dialect.mdx#escapeChar` - A Table Dialect descriptor MAY have the escapeChar property that MUST be a string of one character length; undefined by default. This property specifies a one-character string to use for escaping, for example, \, mutually exclusive with quo…
+- **exclusiveMaximum** `datapackage:standard/table-schema.mdx#exclusiveMaximum` - - **Type**: integer, number, date, time, datetime, duration, year, yearmonth - **Fields**: integer, number, date, time, datetime, duration, year, yearmonth
+- **exclusiveMinimum** `datapackage:standard/table-schema.mdx#exclusiveMinimum` - - **Type**: integer, number, date, time, datetime, duration, year, yearmonth - **Fields**: integer, number, date, time, datetime, duration, year, yearmonth
+- **fieldsMatch** `datapackage:standard/table-schema.mdx#fieldsMatch` - A Table Schema descriptor MAY contain a property fieldsMatch that MUST be a string with the following possible values and the exact value by default:
+- **foreignKeys** `datapackage:standard/table-schema.mdx#foreignKeys` - A foreign key is a reference where values in a field (or fields) on the table ('resource' in data package terminology) described by this Table Schema connect to values a field (or fields) on this or a separate table (resource). They are dir…
+- **geopoint** `datapackage:standard/table-schema.mdx#geopoint` - The field contains data describing a geographic point.
+- **hash** `datapackage:standard/data-resource.mdx#hash` - The MD5 hash for this resource. Other algorithms can be indicated by prefixing the hash's value with the algorithm name in lower-case. For example:
+- **header** `datapackage:standard/table-dialect.mdx#header` - A Table Dialect descriptor MAY have the header property that MUST be boolean with default value true. This property indicates whether the file includes a header row. If true the first row in the file MUST be interpreted as a header row, not…
+- **headerJoin** `datapackage:standard/table-dialect.mdx#headerJoin` - "A Table Dialect descriptor MAY have the headerJoin property that MUST be a string with default value "" "". This property specifies how multiline-header files have to join the resulting header rows."
+- **headerRows** `datapackage:standard/table-dialect.mdx#headerRows` - A Table Dialect descriptor MAY have the headerRows property that MUST be an array of positive integers starting from 1 with default value [1]. This property specifies the row numbers for the header. It is RECOMMENDED to be used for multilin…
+- **id** `datapackage:standard/data-package.mdx#id` - A property reserved for globally unique identifiers. Examples of identifiers that are unique include UUIDs and DOIs.
+- **integer** `datapackage:standard/table-schema.mdx#integer` - The field contains integers - that is whole numbers.
+- **itemKeys** `datapackage:standard/table-dialect.mdx#itemKeys` - A Table Dialect descriptor MAY have the itemKeys property that MUST be array of strings; undefined by default. This property specifies the way of extracting rows from data arrays with itemType is object.
+- **itemType** `datapackage:standard/table-dialect.mdx#itemType` - A Table Dialect descriptor MAY have the itemType property that MUST be a string with value array or object; undefined by default. This property specifies whether the data property contains an array of arrays or an array of objects.
+- **jsonSchema** `datapackage:standard/table-schema.mdx#jsonSchema` - - **Type**: object - **Fields**: array, object
+- **licenses** `datapackage:standard/data-package.mdx#licenses` - The license(s) under which the package is provided.
+- **lineTerminator** `datapackage:standard/table-dialect.mdx#lineTerminator` - A Table Dialect descriptor MAY have the lineTerminator property that MUST be a string; with default value \r\n. This property specifies the character sequence which terminates rows.
+- **list** `datapackage:standard/table-schema.mdx#list` - The field contains data that is an ordered one-level depth collection of primitive values with a fixed item type. In the lexical representation, the field MUST contain a string with values separated by a delimiter which is , (comma) by defa…
+- **maxLength** `datapackage:standard/table-schema.mdx#maxLength` - - **Type**: integer - **Fields**: collections (string, array, object)
+- **maximum** `datapackage:standard/table-schema.mdx#maximum` - - **Type**: integer, number, date, time, datetime, duration, year, yearmonth - **Fields**: integer, number, date, time, datetime, duration, year, yearmonth
+- **minLength** `datapackage:standard/table-schema.mdx#minLength` - - **Type**: integer - **Fields**: collections (string, array, object)
+- **minimum** `datapackage:standard/table-schema.mdx#minimum` - - **Type**: integer, number, date, time, datetime, duration, year, yearmonth - **Fields**: integer, number, date, time, datetime, duration, year, yearmonth
+- **missingValues** `datapackage:standard/table-schema.mdx#missingValues` - Many datasets arrive with missing data values, either because a value was not collected or it never existed. Missing values may be indicated simply by the value being empty in other cases a special value may have been used e.g. -, NaN, 0, -…
+- **missingValues** `datapackage:standard/table-schema.mdx#field-missingValues` - A list of missing values for this field as per Missing Values definition. If this property is defined, it takes precedence over the schema-level property and completely replaces it for the field without combining the values.
+- **nullSequence** `datapackage:standard/table-dialect.mdx#nullSequence` - A Table Dialect descriptor MAY have the nullSequence property that MUST be a string; undefined by default. This property specifies the null sequence, for example, \N.
+- **number** `datapackage:standard/table-schema.mdx#number` - The field contains numbers of any kind including decimals.
+- **path or data [required]** `datapackage:standard/data-resource.mdx#path-or-data` - A resource MUST contain a property describing the location of the data associated to the resource. The location of resource data MUST be specified by the presence of one (and only one) of these two properties:
+- **path or data [required]** `datapackage:standard/data-resource.mdx#tabular-path-or-data` - If the path property is used for providing data than it MUST contain Tabular Data.
+- **pattern** `datapackage:standard/table-schema.mdx#pattern` - - **Type**: string - **Fields**: string
+- **primaryKey** `datapackage:standard/table-schema.mdx#primaryKey` - A primary key is a field or set of fields that uniquely identifies each row in the table. Per SQL standards, the fields cannot be null, so their use in the primary key is equivalent to adding required: true to their constraints.
+- **property** `datapackage:standard/table-dialect.mdx#property` - A Table Dialect descriptor MAY have the property property that MUST be a string; undefined by default. This property specifies where a data array is located in the data structure.
+- **quoteChar** `datapackage:standard/table-dialect.mdx#quoteChar` - "A Table Dialect descriptor MAY have the quoteChar property that MUST be a string of one character length with default value "" (double quote). This property specifies a character to use for quoting in case the delimiter needs to be used insi…"
+- **rdfType** `datapackage:standard/table-schema.mdx#rdfType` - "A richer, ""semantic"", description of the ""type"" of data in a given column MAY be provided using a rdfType property on a field descriptor."
+- **required** `datapackage:standard/table-schema.mdx#required` - - **Type**: boolean - **Fields**: all
+- **schema** `datapackage:standard/data-resource.mdx#schema` - A Tabular Data Resource SHOULD have a schema property to describe a tabular schema of the resource data. If provided, the schema property MUST be a Table Schema descriptor in a form of an object or URL-or-Path.
+- **sheetName** `datapackage:standard/table-dialect.mdx#sheetName` - A Table Dialect descriptor MAY have the sheetName property that MUST be a string; undefined by default. This property specifies a sheet name of a table in the spreadsheet file.
+- **sheetNumber** `datapackage:standard/table-dialect.mdx#sheetNumber` - A Table Dialect descriptor MAY have the sheetNumber property that MUST be an integer with default value 1. This property specifies a sheet number of a table in the spreadsheet file.
+- **skipInitialSpace** `datapackage:standard/table-dialect.mdx#skipInitialSpace` - A Table Dialect descriptor MAY have the skipInitialSpace property that MUST be boolean with default value false. This property specifies how to interpret whitespace which immediately follows a delimiter; if false, it means that whitespace i…
+- **sources** `datapackage:standard/data-package.mdx#sources` - The raw sources for this data package. It MUST be an array of Source objects. A Source object MUST have at least one property. A Source object is RECOMMENDED to have title property and MAY have path, email, and version properties:
+- **string** `datapackage:standard/table-schema.mdx#string` - The field contains strings, that is, sequences of characters.
+- **table** `datapackage:standard/table-dialect.mdx#table` - A Table Dialect descriptor MAY have the table property that MUST be a string; undefined by default. This property specifies a name of the table in the database.
+- **time** `datapackage:standard/table-schema.mdx#time` - The field contains a time without a date.
+- **type** `datapackage:standard/data-resource.mdx#type` - A Data Resource descriptor MAY contain a property type that MUST be a string with the following possible values:
+- **type and format** `datapackage:standard/table-schema.mdx#type-and-format` - These properties are used to give the type of the field (string, number, etc.) - see below for more detail. If type is not provided a consumer MUST utilize the any type for the field instead of inferring it from the field's values.
+- **unique** `datapackage:standard/table-schema.mdx#unique` - - **Type**: boolean - **Fields**: all
+- **uniqueKeys** `datapackage:standard/table-schema.mdx#uniqueKeys` - A unique key is a field or a set of fields that are required to have unique logical values in each row in the table. It is directly modeled on the concept of unique constraint in SQL.
 
 ## tutorial
 
 - **Basic Examples** `frictionless-py:basic-examples.md` - Hands-on walkthrough of core Frictionless operations using a real-world anthropology dataset, demonstrating describing, extracting, validating, and transforming data.
 - **Getting Started** `frictionless-py:getting-started.md` - Introduction to Frictionless Framework with installation instructions, basic usage patterns for both CLI and Python library, and troubleshooting guidance.
 - **How to start using Data Package** `datapackage:guides/using-data-package.md` - Practical guide covering popular Data Package implementations including Open Data Editor, frictionless-py, and frictionless-r with code examples.
+- **frictionless-py** `datapackage:guides/using-data-package.md#frictionless-py` - If you prefer a command-line interface, or Python, there is frictionless-py, a complete framework for managing data packages. Here are main commands available in CLI:
+- **frictionless-r** `datapackage:guides/using-data-package.md#frictionless-r` - For the R community, there is frictionless-r package that allows managing data packages in R language. For example:
 
 ---
 
-*Rendered from index.yaml at 2026-07-05T00:00:00Z*
+*Rendered from index.yaml at 2026-08-19T11:16:25Z*

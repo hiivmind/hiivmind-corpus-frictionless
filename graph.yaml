@@ -1,0 +1,73 @@
+schema_version: 2
+
+concepts:
+  datapackage-v2:
+    label: "Data Package v2"
+    description: "The version 2.0 Data Package standard and its release changes."
+    tags: [v2, standard, release]
+  data-package-standard:
+    label: "Data Package Standard"
+    description: "The package descriptor, metadata properties, and package structure specification."
+    tags: [standard, package, descriptor]
+  data-resource-standard:
+    label: "Data Resource Standard"
+    description: "The resource descriptor, locators, formats, and resource metadata specification."
+    tags: [standard, resource, metadata]
+  table-dialect:
+    label: "Table Dialect"
+    description: "The format and parsing properties used to describe tabular data storage."
+    tags: [standard, tabular-data, formats]
+  table-schema:
+    label: "Table Schema"
+    description: "The language-agnostic schema, field, type, and constraint model for tabular data."
+    tags: [standard, schema, fields, validation]
+  extensions:
+    label: "Data Package Extensions"
+    description: "Extension mechanisms and domain-specific Data Package profiles."
+    tags: [extensions, profiles, customization]
+  ecosystem-and-governance:
+    label: "Ecosystem and Governance"
+    description: "Data Package governance, adoption, software implementations, and community context."
+    tags: [governance, adoption, ecosystem]
+
+relationships:
+  - from: datapackage-v2
+    to: data-package-standard
+    type: includes
+    origin: manual
+    evidence: "datapackage:blog/2024-06-26-v2-release.md"
+  - from: datapackage-v2
+    to: data-resource-standard
+    type: includes
+    origin: manual
+    evidence: "datapackage:blog/2024-06-26-v2-release.md"
+  - from: datapackage-v2
+    to: table-dialect
+    type: includes
+    origin: manual
+    evidence: "datapackage:blog/2024-06-26-v2-release.md"
+  - from: datapackage-v2
+    to: table-schema
+    type: includes
+    origin: manual
+    evidence: "datapackage:blog/2024-06-26-v2-release.md"
+  - from: datapackage-v2
+    to: extensions
+    type: extends
+    origin: manual
+    evidence: "datapackage:overview/changelog.md"
+  - from: data-package-standard
+    to: data-resource-standard
+    type: includes
+    origin: manual
+    evidence: "datapackage:standard/data-package.mdx"
+  - from: ecosystem-and-governance
+    to: datapackage-v2
+    type: see-also
+    origin: manual
+    evidence: "datapackage:blog/2024-06-26-v2-release.md"
+
+meta:
+  generated_at: "2026-08-19T11:17:05Z"
+  concept_count: 7
+  relationship_count: 7
